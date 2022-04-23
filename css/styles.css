@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 1rem auto;
+    padding: .5rem;
+    background-color: #52b788;
+    color: #002E3D;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 0 20px #3a3a3a;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin: 8px 30px;
+    box-shadow: 0 0 15px #3a3a3a;
+}
+header h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 50px;
+    text-shadow: 0 0 15px #3a3a3a;
+}
+
+main h2 {
+    font-family: 'EB Garamond', serif;
+    text-shadow: 0 0 5px #3a3a3a;
+    margin: 20px 0 5px 15px;
+}
+
+main ul li {
+    margin-bottom: 5px;
+    font-family: 'Inconsolata', monospace;
+}
+main ul{
+    margin: 10px 0 20px 50px;
+}
+main hr {
+margin-left: 15px;
+}
+
+main p {
+    margin-left: 15px;
+    font-family: 'PT Sans', sans-serif;
+    }
+
+footer {
+    background-color: #52b788;
+    box-shadow: 0 0 20px #3a3a3a;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+
+}
+
+footer h2 {
+    color: #003D03;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8px;
+}
+
+footer label {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
