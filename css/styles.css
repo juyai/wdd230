@@ -25,22 +25,22 @@ header {
     background-color: #52b788;
     color: #002E3D;
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 200px 1fr;
+    display: block;
     align-items: center;
     justify-items: center;
+    text-align: center;
     box-shadow: 0 0 20px #3a3a3a;
 }
 
 header img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 8px 30px;
     box-shadow: 0 0 15px #3a3a3a;
+    
 }
 header h1 {
     font-family: 'Unica One', cursive;
-    font-size: 50px;
+    font-size: 25px;
     text-shadow: 0 0 15px #3a3a3a;
 }
 
@@ -80,10 +80,14 @@ footer h2 {
     color: #003D03;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 8px;
+    font-size: 16px;
+
 }
 
 footer label {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 10px;
+
 }
