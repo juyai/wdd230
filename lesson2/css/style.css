@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header, main, footer {
+    margin: 0 auto;
+}
+
+header {
+    margin: 1rem auto;
+    padding: .5rem;
+    background-color: #52b788;
+    color: #002E3D;
+    display: block;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 35px;
+}
+
+header h2 {
+    font-family: 'Unica One', cursive;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+main{
+    margin-top: -5px ;
+    margin-left: 10px;
+    margin-right: 1px;
+}
+
+footer{
+    background-color: #52b788;
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-top: 10px;
+}
+
+footer h2 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding: 8px 10px 0 10px;
+}
+
+footer span {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+section {
+    border: 1px solid #cecece;
+    border-radius: 10px 20px 0 0;
+    background-color: white;
+    margin-right:10px;
+} 
+#principle1 {
+    margin-bottom: 24px;
+    margin-right: 5px;
+}
+
+#principle2  {
+    margin-bottom: 24px;
+    margin-left: 5px;
+}
+
+section h3{
+    border-radius: 10px 10px 0 0;
+    background-color: #52b788;
+    padding: 7px 0 10px 10px;
+    font-family: 'Unica One', cursive;
+}
+
+section p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 8px 0 0 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section a {
+    padding: 0 0 0 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+    border: 1px solid #cecece;
+    margin-bottom: 3px;
+    max-width: 92%;
+    width: 100%;
+}
+
+.comment {
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+@media (min-width: 512px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+    
+    #principle3 {
+        grid-column: span 2;
+    }
+
+    #principle3 img {
+        margin-left: 10px;
+        max-width: 95.5%;
+        text-align: center;
+    }
+
+    #principle3 h3 {
+        padding-left: 12px;
+        
+    } 
+
+    footer h2, footer span {
+        display: inline-block;
+    }
+
+    footer #lastUpdated {
+        margin-left: -12px;
+    }
+
+}
+
+@media (min-width: 820px) {
+    #grid {
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+    }
+
+    #principle3 {
+        grid-column: 3/4;
+    }
+    #principle1 h3, #principle2 h3, #principle3 h3 {
+        padding: 5px 0 5px 8px;
+    }
+
+    #principle2 h3 {
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+
+    #principle3 h3 {
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+
+    .image {
+        max-width: 98%;
+        margin-left: 5px;
+    }
+    
+    #principle2 p {
+        margin-top: 5.5px;
+        margin-bottom: 14px;
+    }
+
+    #principle3 p {
+        margin-top: 5.5px;
+        margin-bottom: 14px;
+    }
+
+    #principle2 img {
+        margin-top: 13px;
+    }
+
+    #principle1 img {
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+
+    #principle3 img {
+        margin: 14px 0 0 5px;
+        max-width: 98%;
+    }
+    #principle2 .comment {
+        margin-top: 13px;
+    }
+    #principle1, #principle2 {
+        margin-bottom: -1px;
+    }
+
+    #principle1, #principle2, principle3 {
+        border-radius: 16px 15.7px 0 0;
+    }
+}
