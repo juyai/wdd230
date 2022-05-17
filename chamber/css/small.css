@@ -218,3 +218,10 @@ footer .info3 h2 {
     letter-spacing: 0.1rem;
 }
 
+.logo {
+    align-items: center;
+}
+
+#chamber-name1 {
+    margin-left: 12px;
+}
