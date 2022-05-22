@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div id="message">
+        <h3 class="hided">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
     <header>
         <div class="logo">
             <picture class="logo1">
@@ -41,17 +47,105 @@
         <p id="currentDate"></p>
     </header>
     <main>
-        <div class="hero container">Hero with site name and call to action <br><br><br><br><br><br><br><br><br><br></div>
-        <div class="event container">Event <br><br><br><br><br><br><br><br><br><br></div>
-        <div class="weather container">Weather <br><br><br><br><br><br><br><br><br><br></div>
-        <article class="news container">News Release <br><br><br><br><br><br><br><br><br><br></article>
-        <div class="spotlight container">
-            <div id="spot1" class="spot container">Spotlight 1 <br><br><br><br><br><br><br><br><br><br></div>
-            <div id="spot2" class="spot container">Spotlight 2 <br><br><br><br><br><br><br><br><br><br></div>
-            <div id="hideSmall1" class="spot container">Spotlight 3 <br><br><br><br><br><br><br><br><br><br></div>
+        <div class="hero container">
+            <picture>
+                <!-- <source media="(min-width: 35rem)" srcset="images/otavalo-medium.jpg">
+                <source media="(min-width: 800px)" srcset="images/otavalo-large.jpg"> -->
+                <img src="images/otavalo-small.jpg" alt="Otavalo Valley">
+            </picture>
+            <h1>Welcome to Otavalo Valley</h1>
+            <a href="#">Join the Chamber</a>
         </div>
+        <div class="event container">
+            <h2>2nd Mushuc Runa Expo Fair</h2>
+            <p id="emojis">🤹🏻‍♀️🎪🧵🥦🍳</p>
+            <p class="date">Join us for this grand expo fair, Saturday at 3:00 pm</p>
+            <p id="more">more info...</p>
+        </div>
+        <div class="weather container">
+            <h2>Weather</h2>
+            <div class="rainy">
+                <img src="images/rain.png" alt="Rainy day">
+                <h3 class="celcius">12° C</h3>
+            </div>
+            <h3 id="showers">Showers</h3>
+            <hr class="line">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Wind Speed:</td>
+                        <td>5 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <article class="news container">
+            <h2>New Release</h2>
+            <p>
+                In an effort to support local businesses and non-profit organizations 
+                that work in our community, the Otavalo Valley Chamber of Commerce in
+                collaboration with the city municipality present the new LED screens 
+                placed in the main streets of the city with the aim of promoting and 
+                disseminating information about your premises, business or enterprise. 
+                Send us your visual product to the following email: <br>
+                📩otavalovalley@gmail.com <br>
+                Technical requirements:<br>
+                Video in HD Resolution (1080 x 1920 pixels) in vertical format .mp4 🤳🏻
+                maximum 15 seconds, without sound.
+                </p>
+        </article>
+        <div class="spotlight container">
+            <div id="spot1" class="spot container">
+                <h2>COLD CAKE / CAKE DESIGN</h2>
+                <img src="images/cold-cake.jpg" alt="Cold Cake">
+                <p class="cake-quote">
+                    Bat with love 🥰<br>
+                    Bake with Passion 👩🏻‍🍳👨🏻‍🍳<br>
+                    And decorate with the heart😍
+                </p>
+                <hr class="line"> 
+                <a href="#">info@cold-cake.com</a><br>
+                <a href="tel:+593 99 409 7634">+593 99 409 7634</a> 
+                <a href="https://www.facebook.com/coldcake.otavalo">Website</a>
 
-        <div id="hideSmall2" class="join container">Join <br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+            <div id="spot2" class="spot container">
+                <h2>WUASIPUNGO</h2>
+                <img src="images/wasipungo.png" alt="Wasipungo">
+                <p class="wasi-quote">
+                    Creating your style...
+                </p>
+                <hr class="line"> 
+                <a href="#">hello@wuasipungo.com</a><br>
+                <a href="tel:+593 99 118 6557">+593 99 118 6557</a> 
+                <a href="https://www.facebook.com/wasipungo.ec">Website</a>
+            </div>
+        
+            <div id="hideSmall1" class="spot container">
+                <h2>LOS CHOCLITOS</h2>
+                <img src="images/choclitos.png" alt="Los Choclitos">
+                <p class="chocli-quote">
+                    A culture, a tradition...
+                </p>
+                <hr class="line"> 
+                <a href="#">info@loschoclitos.com</a><br>
+                <a href="tel:+593 98 918 1790">+593 98 918 1790</a> 
+                <a href="https://www.facebook.com/cadenarincondelsabor">Website</a>
+
+            </div>
+        </div>
+        <div id="hideSmall2" class="join container">
+                <a href="#">Join Us!</a>
+                <p>
+                    Discover how to join the chamber of commerce and
+                    how it will benefit your organization!
+                </p>
+        </div>
+        
 
 
     </main>

@@ -28,7 +28,8 @@
     main {
         display: grid;
         grid-template-columns: 60% 40%;
-        grid-template-rows: repeat(5, 1fr);
+        /* AQUI TAMBIEN LE CAMBIÉ PARA QUE LAS FILAS SE AJUSTEN A SU MINIMO TAMAÑO DE ACUEDO A SU CONTENIDO */
+        grid-template-rows: repeat(5, max-content);
         margin-bottom: 5px;
     }
 
@@ -37,6 +38,8 @@
         grid-row: 1/2;
         grid-column: span 2;
         margin: 10px 0 5px 0;
+        /* LE PUSE "FIT-CONTENT" A LA DIV QUE TIENE LA IMAGEN */
+        height: fit-content;
     }
 
     .news {
@@ -68,6 +71,35 @@
         grid-row: 4/5;
         grid-column: span 2;
         margin: 0 0 5px 0;
+        text-align: center;
+        border: none;
+        box-shadow: 0 0 15px 0px black;
+    }
+    
+    #hideSmall2 a {
+        background-color: var(--accent2-color);
+        text-decoration: none;
+        border-radius: 13PX;
+        line-height: 1.3rem;
+        padding: 15px 16px 15px 16px;
+        color: white;
+        font-family: var(--nav-font);
+        font-size: 20px;
+        font-weight: bolder;
+        box-shadow: 0 0.1px 10px 0 rgb(248, 248, 246);
+        margin: 20px 0 0 0;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        border: none;
+    }
+
+    #hideSmall2 p {
+        font-size: 20px;
+        margin: 25px 0 0 0;
+        padding: 0;
+        font-weight: bold;
+        border:none;
     }
 
     .event {
@@ -76,10 +108,25 @@
         margin: 0 5px 5px 0;
     }
 
-    .weather {
+    .event * {
+        margin-bottom: 25px;
+    }
+
+    .event h2 {
+        margin-bottom: 25px;
+    }
+
+    div.weather .celcius {
+        width: max-content;
+    }
+
+    div.weather {
         grid-row: 5/6;
         grid-column: 2/3;
         margin: 0 0 5px 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-right: 0;
     }
 
     footer {
@@ -179,12 +226,5 @@
     }
 }
     
-
-
-
-
-
-
-
 
 

@@ -1,20 +1,20 @@
 function toggleMenu(){
-    document.getElementById("Nav").classList.toggle("open")
-    document.getElementById("Btn").classList.toggle("open");
+  document.getElementById("Nav").classList.toggle("open")
+  document.getElementById("Btn").classList.toggle("open");
 }
 const x = document.getElementById("Btn")
 x.onclick = toggleMenu;
 
 //Header Current Date
 const dias = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+];
 const numeroDia = new Date().getDay();
 const nombreDia = dias[numeroDia];
 const year = new Date().getFullYear();
@@ -33,3 +33,13 @@ const footerDate = new Date();
 
 document.querySelector("#currentYear").innerHTML = year;
 document.getElementById("lastUpdated").innerHTML = document.lastModified;
+
+const message = document.getElementById('message');
+if (numeroDia == 1 || numeroDia ==2) {
+  message.style.display = "block";
+} else {
+  message.style.display = "none";
+};
+
+
+
