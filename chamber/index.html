@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Otavalo Valley Chamber of Commerce is a responsible organization 
+        that creates commercial links by associating local and regional commerce with businesses and 
+        professionals from the community to develop marketing strategies, such as the purchase and sale
+        of products and services between associates and the establishment of real prices for keep trade orderly.">
     <title>Chamber</title>
     <script src="js/scripts.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -21,7 +26,8 @@
     <header>
         <div class="logo">
             <picture class="logo1">
-                <img src="images/logo1.gif" alt="Otavalo Valley Chamber of Commerce">
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img src="images/logo.png" alt="Otavalo Valley Chamber of Commerce">
             </picture>
             <div id="chamber-name1">
                 <h1>Otavalo <br>Valley</h1>
@@ -47,43 +53,52 @@
         <p id="currentDate"></p>
     </header>
     <main>
-        <div class="hero container">
+        <div class="hero">
             <picture>
-                <!-- <source media="(min-width: 35rem)" srcset="images/otavalo-medium.jpg">
-                <source media="(min-width: 800px)" srcset="images/otavalo-large.jpg"> -->
-                <img src="images/otavalo-small.jpg" alt="Otavalo Valley">
+                <source media="(min-width: 800px)" srcset="images/hero-large.jpg">
+                <source media="(min-width: 560px)" srcset="images/hero-medium.jpg">
+                <img src="images/hero-small.jpg" alt="Assigned image foe WWDD230 W6">
+                
             </picture>
             <h1>Welcome to Otavalo Valley</h1>
             <a href="#">Join the Chamber</a>
         </div>
-        <div class="event container">
+        <div class="event">
             <h2>2nd Mushuc Runa Expo Fair</h2>
             <p id="emojis">🤹🏻‍♀️🎪🧵🥦🍳</p>
             <p class="date">Join us for this grand expo fair, Saturday at 3:00 pm</p>
             <p id="more">more info...</p>
         </div>
-        <div class="weather container">
+        <div class="weather">
             <h2>Weather</h2>
-            <div class="rainy">
-                <img src="images/rain.png" alt="Rainy day">
-                <h3 class="celcius">12° C</h3>
+            <div class="graphic">
+                <img src="images/cloudy.png" alt="Rainy day">
+                <h3 class="temperature">
+                    <span id="t">33</span>
+                    <span>&#176;C</span>
+                </h3>
             </div>
-            <h3 id="showers">Showers</h3>
+            <h3 id="forecast">Partly Cloudy</h3>
             <hr class="line">
             <table>
                 <tbody>
                     <tr>
-                        <td>Wind Speed:</td>
-                        <td>5 km/h</td>
+                        <td class="text-right">Wind Speed:</td>
+                        <td>
+                            <span id="s">2.5</span>
+                            <span>km/h</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Wind Chill:</td>
-                        <td>N/A</td>
+                        <td class="text-right">Wind Chill:</td>
+                        <td>
+                            <span id="wind-chill"></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <article class="news container">
+        <article class="news">
             <h2>New Release</h2>
             <p>
                 In an effort to support local businesses and non-profit organizations 
@@ -98,8 +113,8 @@
                 maximum 15 seconds, without sound.
                 </p>
         </article>
-        <div class="spotlight container">
-            <div id="spot1" class="spot container">
+        <div class="spotlight">
+            <div id="spot1" class="spot">
                 <h2>COLD CAKE / CAKE DESIGN</h2>
                 <img src="images/cold-cake.jpg" alt="Cold Cake">
                 <p class="cake-quote">
@@ -108,50 +123,51 @@
                     And decorate with the heart😍
                 </p>
                 <hr class="line"> 
-                <a href="#">info@cold-cake.com</a><br>
-                <a href="tel:+593 99 409 7634">+593 99 409 7634</a> 
-                <a href="https://www.facebook.com/coldcake.otavalo">Website</a>
-
+                <div class="links">
+                    <a href="#">info@cold-cake.com</a><br>
+                    <a href="tel:+593 99 409 7634">+593 99 409 7634</a> 
+                    <a href="https://www.facebook.com/coldcake.otavalo">Website</a>
+                </div>  
             </div>
-            <div id="spot2" class="spot container">
+            <div id="spot2" class="spot">
                 <h2>WUASIPUNGO</h2>
-                <img src="images/wasipungo.png" alt="Wasipungo">
+                <img src="images/wasipungo.jpg" alt="Wasipungo">
                 <p class="wasi-quote">
                     Creating your style...
                 </p>
                 <hr class="line"> 
-                <a href="#">hello@wuasipungo.com</a><br>
-                <a href="tel:+593 99 118 6557">+593 99 118 6557</a> 
-                <a href="https://www.facebook.com/wasipungo.ec">Website</a>
+                <div class="links">
+                    <a href="#">hello@wuasipungo.com</a><br>
+                    <a href="tel:+593 99 118 6557">+593 99 118 6557</a> 
+                    <a href="https://www.facebook.com/wasipungo.ec">Website</a>
+                </div>
             </div>
-        
-            <div id="hideSmall1" class="spot container">
+            <div id="hideSmall1" class="spot">
                 <h2>LOS CHOCLITOS</h2>
-                <img src="images/choclitos.png" alt="Los Choclitos">
+                <img src="images/choclitos.jpg" alt="Los Choclitos">
                 <p class="chocli-quote">
                     A culture, a tradition...
                 </p>
                 <hr class="line"> 
-                <a href="#">info@loschoclitos.com</a><br>
-                <a href="tel:+593 98 918 1790">+593 98 918 1790</a> 
-                <a href="https://www.facebook.com/cadenarincondelsabor">Website</a>
-
+                <div class="links">
+                    <a href="#">info@loschoclitos.com</a><br>
+                    <a href="tel:+593 98 918 1790">+593 98 918 1790</a> 
+                    <a href="https://www.facebook.com/cadenarincondelsabor">Website</a>
+                </div>
             </div>
         </div>
-        <div id="hideSmall2" class="join container">
+        <div id="hideSmall2" class="join">
                 <a href="#">Join Us!</a>
                 <p>
                     Discover how to join the chamber of commerce and
                     how it will benefit your organization!
                 </p>
         </div>
-        
-
-
     </main>
     <footer>
         <picture id="logo2">
-           <img  id="resize" src="images/logo1.gif" alt="Chamber Logo"> 
+            <source srcset="images/logo.webp" type="image/webp" >
+           <img  id="resize" src="images/logo.png" alt="Chamber Logo"> 
         </picture>
         <div class="info1">
             <h3>Otavalo Valley Chamber of Commerce</h3>
@@ -165,13 +181,13 @@
             <br>
             <a href="tel:+5398187458">+(593) 06-2920626</a> 
             <br>
-            <img src="images/pin.png" alt="Otavalo Valley CC Location">
-            <a href="#">Location Map</a>       
+            
+            <a href="#">📍Location Map</a>       
         </div> 
         <hr>
         <div class="info3">
             <p>&copy; <span id="currentYear"></span> Otavalo Valley Chamber &nbsp;</p>
-            <h2>Yurinii Fuentes &nbsp; </h2>  
+            <h3>Yurinii Fuentes &nbsp; </h3>  
             <p>WDD 230 Project &nbsp; </p>  
             <p>Last Modification: 
                 <span id="lastUpdated"></span>

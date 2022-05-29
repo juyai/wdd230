@@ -59,8 +59,9 @@
         grid-template-columns: 25% 50% 25%;
         grid-template-rows: auto auto auto;
         row-gap: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
+        justify-content: end;
+        margin-left: 40px;
+        margin-left: 20px;
     }
 
     .event {
@@ -89,21 +90,22 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
-        padding: 16px 16px 16px 16px;
+        margin-bottom: 0;
+        justify-items: stretch;
     }
 
     #spot1 {
         grid-column: 1/2;
         grid-row: 1/2;
         padding: 16px 0 16px 16px;
-        margin: 10px 35px 10px 0;
+        margin: 10px 20px 10px 20px;
     }
     
     #spot2 {
         grid-column: 1/2;
         grid-row: 2/3;
         padding: 16px 0 16px 16px;
-        margin: 10px 35px 10px 0;
+        margin: 10px 20px 10px 20px;
     }
 
     div.event h2, 
@@ -114,7 +116,6 @@
     font-size: 15px;
     }
 
-
     #hideSmall1 {
         display: block;
         grid-column: 1/2;
@@ -122,15 +123,16 @@
         text-align: center;
         border: none;
         box-shadow: 0 0 15px 0px black;
+        margin: 10px 20px 10px 20px;
     }
 
     #hideSmall1 h2 {
         color: var(--accent2-color);
         font-weight: bolder;
         font-family: var(--heading-font);
-        font-size: 25px;
+        font-size: 15px;
         text-shadow: 0 0 2px rgb(245, 247, 249);
-        margin: 0;
+        margin: 20px 20px;
         border: none;
     }
 
