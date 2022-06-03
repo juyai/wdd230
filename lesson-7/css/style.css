@@ -1,0 +1,25 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    width: 300px;
+    margin: 0 auto;
+}
+
+article img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
