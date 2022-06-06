@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otavalo Valley Chamber | Discover</title>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/discover.js" defer></script>
+    <script src="js/lazyLoad.js" defer></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="message">
+        <h3 class="hided">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
+    <header>
+        <div class="logo">
+            <picture class="logo1">
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img src="images/logo.png" alt="Otavalo Valley Chamber of Commerce">
+            </picture>
+            <div id="chamber-name1">
+                <h1>Otavalo <br>Valley</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt=""></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt=""></a>
+        </div>
+        <button id="Btn">
+                <span>&#9776;</span>
+                <span>X</span>
+        </button>
+        <nav>
+            <ul id="Nav">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p id="currentDate"></p>
+    </header>
+    <main id="main-discover">
+        <div id="top">
+            <div id="user-visits"></div>
+            <div class="statistics">
+                <h2 class="title">Statistics</h2>
+                <p>
+                    Urban and rural resident population, distribution of the ethnic population,
+                    employed population by branch of activity, economic indicators, participation
+                    in economic activity and main activities that generate the most income in the municipality of Valle de Otavalo.
+                    </p>
+            </div>
+        </div>
+        <div id="discover-grid">
+            <div class="discover1">
+                <h2>Population</h2>
+                <p>
+                    Population: 104,874 inhabitants <br>
+                    Urban: 37.5% <br>
+                    Rural: 62.5% <br>
+                    Female: 51.9% <br>
+                    Male: 48.1% 
+                </p>
+            </div>
+            <div class="discover2">
+                <h2>Distribution of the Ethnic Population</h2>
+                <img src="images/ethnic-population.jpg" alt="Ethnic Population">
+                <p>
+                    October 31, 2003, the National Congress
+                    declared Otavalo the "Intercultural Capital
+                    of Ecuador" for being "a space for creative 
+                    relations between indigenous people and mestizos, 
+                    as well as a national benchmark for unity in diversity."  
+                </p>
+            </div>
+            <div class="discover3">
+                <h2>Employed population by branch of activity</h2>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/activity-branch-large.jpg">
+                    <img src="images/activity-branch.jpg" alt="Ethnic Population">
+                </picture> 
+                <p>
+                    The manufacturing industry is the largest 
+                    economic activity in Otavalo.
+                </p>
+            </div>
+            <div class="discover4">
+                <h2>Participation in economic activity</h2>
+                <p>
+                    - Economic establishments: 3.8 thousand establishments <br>
+                    - Sales Income: 537 million <br>
+                    - Employed Personnel: 9.7 thousand people
+                </p>
+            </div>
+            <div class="discover5">
+                <h2>Main activities that generate the most income</h2>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/most-income-activities-large.jpg">
+                    <img src="images/most-income-activities.jpg" alt="Ethnic Population">
+                </picture>
+                <p>
+                    - Wholesale and retail trade - vehicle repair
+                    automobiles and motorcycles represent 82.5% <br>
+                    - Manufacturing industries represent 3.4% <br>
+                    - Professional, scientific and technical activities represent 3.4%
+                </p>
+            </div>  
+            <div class="discover6">
+                <h2 class="gallery">Photo Gallery</h2>
+                <div id="margin-top" class="border">
+                    <h2>Plaza de Ponchos</h2>
+                    <img class="pics" src="images/placeholder.jpg" data-src="images/market.jpg"
+                        alt="South America's largest artisanal market">
+                    <p>
+                        Sale of crafts of all kinds.
+                    </p>
+                </div>
+                <div class="border">
+                    <h2>Condor Park</h2>
+                    <img class="pics" src="images/placeholder.jpg" data-src="images/condor-park.jpg"
+                        alt="Condor Park">
+                    <p>
+                        Bird of prey rescue and care center
+                    </p>
+                </div>
+                <div class="border">
+                    <h2>Mojanda Lagoon</h2>
+                    <img class="pics" src="images/placeholder.jpg" data-src="images/mojanda-lagoon.jpg"
+                        alt="Mojanda Lagoon">
+                    <p>
+                        A series of crater lakes
+                </div>
+                <div class="border">
+                    <h2>Stores</h2>
+                    <img class="pics" src="images/placeholder.jpg" data-src="images/stores.jpg"
+                        alt="Village streets">
+                    <p>Located on the main streets</p>
+                </div>
+                <div class="border">
+                    <h2>Shanandoa Pie Shop</h2>
+                    <img class="pics" src="images/placeholder.jpg" data-src="images/pie-shop.jpg" alt="The best pie">
+                    <p>Classic homemade fruit pies</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <picture id="logo2">
+            <source srcset="images/logo.webp" type="image/webp" >
+           <img  id="resize" src="images/logo.png" alt="Chamber Logo"> 
+        </picture>
+        <div class="info1">
+            <h3>Otavalo Valley Chamber of Commerce</h3>
+            <p> 
+                Quiroga & Quito<br>
+                Otavalo, Imbabura
+            </p>
+        </div>            
+        <div class="info2">
+            <a href="mailto:info@otavalovalleycc.org">info@otavalovalleycc.org</a>
+            <br>
+            <a href="tel:+5398187458">+(593) 06-2920626</a> 
+            <br>
+            
+            <a href="#">📍Location Map</a>       
+        </div> 
+        <hr>
+        <div class="info3">
+            <p>&copy; <span id="currentYear"></span> Otavalo Valley Chamber &nbsp;</p>
+            <h3>Yurinii Fuentes &nbsp; </h3>  
+            <p>WDD 230 Project &nbsp; </p>  
+            <p>Last Modification: 
+                <span id="lastUpdated"></span>
+            </p>
+        </div>                  
+    </footer>
+</body>
+</html>

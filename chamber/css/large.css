@@ -250,6 +250,36 @@
         margin-top: 9px;
     }
 
+
+    #discover-grid {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding-bottom: 15px;
+    }
+
+    .discover5 {
+        margin-bottom: 0;
+    }
+
+    .gallery {
+        margin: auto;
+    }
+
+    div.border h2 {
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+        line-height: normal;
+    }
+
+    .discover6 .border img {
+        padding-top: 0;
+    }
+
+    .discover6 .border p {
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 @media (min-width: 1283px) {
