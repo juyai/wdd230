@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --back1: #7eb8c2;
+    --back2: #5f8aa4;
+    --zebra1: #e7f0ed;
+    --zebra2: #e7ffed;
+    --border: #bbbbbb;
+    --table-font: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: var(--table-font);
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+    background-color: var(--back1);
+    box-shadow: 3px 3px 10px rgb(54, 54, 54);
+}
+
+thead tr:nth-child(1) th {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+thead tr:nth-child(2) {
+    background-color: var(--back2);
+    color: white;
+}
+
+thead tr:nth-child(2) th:nth-child(1) {
+    width: 40%;
+}
+
+thead tr:nth-child(2) th:nth-child(2) {
+    width: 25%;
+}
+
+thead tr:nth-child(2) th:nth-child(3) {
+    width: 35%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra1);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra2);
+}
+
+tfoot {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+tr {
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.season {
+    font-style: italic;
+}
+
+.goal {
+    background-color: var(--back2);
+    color: white;
+}
