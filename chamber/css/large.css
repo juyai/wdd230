@@ -280,6 +280,62 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+    #join-main h2 {
+        font-size: 2rem;
+    }
+
+    #join-main p {
+        font-size: 1.3rem;
+    }
+
+    #join-app {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: white;
+    }
+
+    form {
+        grid-column: 1/2;
+    }
+
+    #b-container {
+        display: grid;
+        grid-column: -1/-2;
+        background-color: white;
+        align-content: center;
+        max-width: 30rem;
+    }
+
+    main#join-main h2#sml {
+       font-size: 1.2rem;
+    }
+
+    .level h3 {
+        font-size: 1.1rem;
+    }
+
+    .level h4 {
+        font-size: 1.1rem;
+    }
+
+    .level li {
+        font-size: 1rem;
+    }
+
+    #thanks {
+        max-width: 30rem;
+    }
+
+    #thanks h2 {
+        font-size: 4rem;
+    }
+
+    #thanks p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
 }
 
 @media (min-width: 1283px) {

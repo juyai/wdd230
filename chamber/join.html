@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otavalo Valley Chamber | Join</title>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/join.js" defer></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="message">
+        <h3 class="hided">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
+    <header>
+        <div class="logo">
+            <picture class="logo1">
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img src="images/logo.png" alt="Otavalo Valley Chamber of Commerce">
+            </picture>
+            <div id="chamber-name1">
+                <h1>Otavalo <br>Valley</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt=""></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt=""></a>
+        </div>
+        <button id="Btn">
+                <span>&#9776;</span>
+                <span>X</span>
+        </button>
+        <nav>
+            <ul id="Nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p id="currentDate"></p>
+    </header>
+    <main id="join-main">
+        <h2>JOIN US TODAY!</h2>
+        <p>Otavalo Valley Chamber Membership Application Form</p>
+        <div id="join-app">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>YOUR INFORMATION</legend>
+                    <label class="top">First Name 
+                        <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                        <input type="text" name="fname" required>
+                    </label>
+                    <label class="top">Last Name 
+                        <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                        <input type="text" name="lname" required>
+                    </label>
+                    <label class="top">Email
+                        <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                        <input type="email" name="email" placeholder="someone@gmail.com" required>
+                    </label>
+                    <label class="top">Cell Phone Number
+                        <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                        <input type="tel" name="phone" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>BUSINESS INFORMATION</legend>
+                    <label class="top">Business Name 
+                        <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                        <input type="text" name="bname" required>
+                    </label>
+                    <label class="top">Business Position Title
+                        <br><em>(Minimum of 7 characters, letters, spaces, and hyphens only.)</em>
+                        <input type="text" name="title" pattern="[A-Za-z- ]{7}">
+                    </label>
+                    <label class="top">Business Description
+                        <textarea name="jdescription"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>CHOOSE YOUR MEMBERSHIP</legend>
+                    <div>Membership Level <em>(Choose one)</em></div>
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="NPmembership" >NP Membership (Non-Profit)</label> 
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="bronzeMembership" >Bronze Membership</label> 
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="silverMembership" >Silver Membership</label>   
+                    <label class="sbs"><input type="radio" name="membershipLevel" value="goldMembership" >Gold Membership</label>   
+                </fieldset>
+                <input type="hidden" id="dateTime" name="dateTime">
+                <input class="joinbtn" type="submit" value="JOIN TO THE CHAMBER" >
+            </form>
+            <div id="b-container">
+                <h2 id="sml">Select the right membership for you</h2>
+                <div class="membershipBenefits">
+                    <div class="level">
+                        <h3>NP Membership</h3>
+                        <ul>
+                            <li>For non profit organizations and there is no fee.</li>
+                        </ul>
+                    </div>
+                    <div class="level">
+                        <h3>Bronze Membership</h3>
+                        <h4>1 year for $240</h4>
+                        <ul>
+                            <li>
+                                Access to bussiness develop groups, and Chamber councils
+                                or committess
+                            </li>
+                            <li>
+                                Updated information on our coming festivals, new programs,
+                                initiatives and networking events 
+                            </li>
+                            <li>Training seminarios and workshops</li>
+                            <li>
+                                Complete access to the directory of associated companies and
+                                at the same time the location of other nearby companies.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="level">
+                        <h3>Silver Membership</h3>
+                        <h4>As low as $350 a year</h4>
+                        <ul>
+                            <li>
+                                Advertising (like on the home page spotlights)
+                            </li>
+                            <li>
+                                Expand your contacts and promote your products and/or 
+                                services through our various virtual platforms, as well as 
+                                an associated municipal radio station
+                            </li>
+                            <li>Event discounts</li>
+                            <li>
+                                Assistance with marketing, accounting, or security.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="level">
+                        <h3>Gold Membership</h3>
+                        <h4>As low as $350 a year</h4>
+                        <ul>
+                            <li>
+                                All the benifits of our Bronze and Silver members and more...
+                            </li>
+                            <li>
+                                For more information about our Gold Membership please contact
+                                otavalovalleyccinfo@gmail.com
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <picture id="logo2">
+            <source srcset="images/logo.webp" type="image/webp" >
+           <img  id="resize" src="images/logo.png" alt="Chamber Logo"> 
+        </picture>
+        <div class="info1">
+            <h3>Otavalo Valley Chamber of Commerce</h3>
+            <p> 
+                Quiroga & Quito<br>
+                Otavalo, Imbabura
+            </p>
+        </div>            
+        <div class="info2">
+            <a href="mailto:info@otavalovalleycc.org">info@otavalovalleycc.org</a>
+            <br>
+            <a href="tel:+5398187458">+(593) 06-2920626</a> 
+            <br>
+            
+            <a href="#">📍Location Map</a>       
+        </div> 
+        <hr>
+        <div class="info3">
+            <p>&copy; <span id="currentYear"></span> Otavalo Valley Chamber &nbsp;</p>
+            <h3>Yurinii Fuentes &nbsp; </h3>  
+            <p>WDD 230 Project &nbsp; </p>  
+            <p>Last Modification: 
+                <span id="lastUpdated"></span>
+            </p>
+        </div>                  
+    </footer>
+</body>
+</html>

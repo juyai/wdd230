@@ -326,6 +326,10 @@
     .discover6 .border p {
         margin: 0;
     }
+
+    #t-container {
+        display: block;
+    }
 }
 
 
