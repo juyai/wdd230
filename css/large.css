@@ -1,0 +1,476 @@
+@media (min-width: 800px) {
+
+    header {
+        background-color: var(--primary-color);
+        display: grid;
+        grid-template-columns: 35% 50% 15%;
+        grid-template-rows: 70% 30%;
+    }
+
+    #chamber-name1 h1 {
+        font-size: 20px;
+    }
+
+    #chamber-name1 p {
+        font-size: 15px;
+        line-height: 0.5rem;
+    }
+
+    .social-icons {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        column-gap: 0;
+    } 
+
+    .social-icons a img {
+        max-width: 50%;
+    }
+   
+    #Btn {
+        display: none;
+    }
+
+    nav {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 2rem;
+    }
+
+    #currentDate {
+        grid-row: 2/3;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: auto auto auto;
+        row-gap: 12px;
+        justify-content: end;
+        margin-left: 40px;
+        margin-left: 20px;
+    }
+
+    .event {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 10px 3px 3px 15px;
+    }
+
+    .hero {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        margin-right: 3px;
+        height: auto;
+    }
+
+    .hero picture img {
+        width: 100%;
+        height: 100%; /*Esto es a nuestra decisión*/
+        background-size: cover;
+        background-position: center;
+    }
+
+    .spotlight {
+        grid-column: 3/4;
+        grid-row: 1/4;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 0;
+        justify-items: stretch;
+    }
+
+    #spot1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 16px 0 16px 16px;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    #spot2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 16px 0 16px 16px;
+        margin: 10px 20px 10px 20px;
+    }
+
+    div.event h2, 
+    div.weather h2,
+    article h2, 
+    div#spot1 h2, 
+    div#spot2 h2 {
+    font-size: 15px;
+    }
+
+    #hideSmall1 {
+        display: block;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        border: none;
+        box-shadow: 0 0 15px 0px black;
+        margin: 10px 20px 10px 20px;
+    }
+
+    #hideSmall1 h2 {
+        color: var(--accent2-color);
+        font-weight: bolder;
+        font-family: var(--heading-font);
+        font-size: 15px;
+        text-shadow: 0 0 2px rgb(245, 247, 249);
+        margin: 20px 20px;
+        border: none;
+    }
+
+    #hideSmall1 img {
+        border-radius: 50%;
+        border: none;
+        max-width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cake-quote, .wasi-quote {
+        font-size: 14px;
+        font-style: italic;
+        margin: 0;
+        font-weight: bold;
+
+    }
+
+    .chocli-quote, div#spot3 a {
+        border: none;
+    }
+
+    .chocli-quote {
+        font-size: 14px;
+        font-style: italic;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    #hideSmall1 a {
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0;
+        margin: 0 10px 0 0;
+        color: var(--paragraph-color);
+        border: none;
+    } 
+
+    div.weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 15px;
+        margin-right: 3px;
+        width: auto;
+    }
+
+    #hideSmall2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-left: 15px;
+        margin-right: 3px;
+    }
+
+    .news {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-right: 3px;
+    }
+
+    /* ------------------- FOOTER -------------------------- */
+
+    footer .info3 {
+        max-width: 100%;
+        padding: 6px 0 5px 0;
+        line-height: 0.2rem;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        grid-template-rows: 1fr;
+        column-gap: 14px;
+        margin: 0 auto;
+    }
+
+    footer picture#logo2 img#resize {
+        max-width: 80%;
+        padding-left: 20px;
+    }
+
+    footer .info2 a {
+        font-size: 13px;
+    }
+
+    footer .info3 p:nth-of-type(1) {
+        grid-column: 1/2;
+        justify-self: end;
+    }
+
+    footer .info3 p:nth-of-type(1)::after {
+        content: "|";
+    }
+
+    footer .info3 h2 {
+        grid-column: 2/3;
+        font-size: 12px;
+    }
+
+    footer .info3 h2::after {
+        content: "|";
+    }
+
+    footer .info3 p:nth-of-type(2) {
+        grid-column: 3/4;
+        justify-self: start;
+    }
+
+    footer .info3 p:nth-of-type(2)::after {
+        content: "|";
+    } 
+
+    footer .info3 p:nth-of-type(3) {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        margin-left: 0;
+        margin-top: 9px;
+    }
+
+
+    #discover-grid {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding-bottom: 15px;
+    }
+
+    .discover5 {
+        margin-bottom: 0;
+    }
+
+    .gallery {
+        margin: auto;
+    }
+
+    div.border h2 {
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+        line-height: normal;
+    }
+
+    .discover6 .border img {
+        padding-top: 0;
+    }
+
+    .discover6 .border p {
+        font-size: 17px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #join-main h2 {
+        font-size: 2rem;
+    }
+
+    #join-main p {
+        font-size: 1.3rem;
+    }
+
+    #join-app {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: white;
+    }
+
+    form {
+        grid-column: 1/2;
+    }
+
+    #b-container {
+        display: grid;
+        grid-column: -1/-2;
+        background-color: white;
+        align-content: center;
+        max-width: 30rem;
+    }
+
+    main#join-main h2#sml {
+       font-size: 1.2rem;
+    }
+
+    .level h3 {
+        font-size: 1.1rem;
+    }
+
+    .level h4 {
+        font-size: 1.1rem;
+    }
+
+    .level li {
+        font-size: 1rem;
+    }
+
+    #thanks {
+        max-width: 30rem;
+    }
+
+    #thanks h2 {
+        font-size: 4rem;
+    }
+
+    #thanks p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    main#directory article.grid {
+        grid-template-columns: repeat(auto-fit, minmax(372px, 1fr));
+    }
+
+    main#directory article.list section h2 {
+        font-size: .9rem;
+        margin-right: 1rem;
+        width: 20%;
+    }
+    
+    main#directory article.list section p.address {
+        font-size: .8rem;
+        width: 35%;
+        padding-left: 1.7rem;
+    }
+
+    main#directory article.list section a.c-phone {
+        font-size: .8rem;
+        padding-left: .4rem;
+        width: 20%;
+    }
+
+    main#directory article.list section a.c-url {
+        font-size: .8rem;
+        width: 18%;
+        padding-left: .3rem;
+    }
+
+    main#directory article.list section p.c-ml {
+        font-size: .8rem;
+        padding-left: 20px;
+        width: 15%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 1283px) {
+
+    #chamber-name1 h1 {
+        font-size: 37px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #chamber-name1 p {
+        font-size: 20px;
+        line-height: 0.5rem;
+    }
+
+    #currentDate {
+        font-size: 17px;
+        line-height: 2rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 50px;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 1rem;
+        padding: 20px;
+    }
+
+    .social-icons a img {
+        max-width: 40%;
+    }
+
+    footer picture#logo2 img#resize {
+        max-width: 60%;
+        padding-left: 20px;
+    }
+
+    footer .info1 h3 {
+        font-size: 20px;
+    }
+    
+    footer .info1 p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    footer .info2 a {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    #chamber-name1 h1 {
+        font-size: 45px;
+    }
+
+    #chamber-name1 p {
+        font-size: 30px;
+    }
+
+    #currentDate {
+        font-size: 20px;
+        line-height: 3rem;
+    }
+
+    footer picture#logo2 img#resize {
+        max-width: 50%;
+        padding-left: 20px;
+    }
+
+    footer .info1 {
+        margin-left: -60px;
+    }
+
+    footer .info1 h3 {
+        font-size: 20px;
+    }
+    
+    footer .info1 p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    footer .info2 a {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+}
