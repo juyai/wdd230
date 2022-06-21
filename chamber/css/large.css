@@ -336,6 +336,48 @@
         line-height: 2.5rem;
     }
 
+    main#directory article.grid {
+        grid-template-columns: repeat(auto-fit, minmax(372px, 1fr));
+    }
+
+    main#directory article.list section h2 {
+        font-size: .9rem;
+        margin-right: 1rem;
+        width: 20%;
+    }
+    
+    main#directory article.list section p.address {
+        font-size: .8rem;
+        width: 35%;
+        padding-left: 1.7rem;
+    }
+
+    main#directory article.list section a.c-phone {
+        font-size: .8rem;
+        padding-left: .4rem;
+        width: 20%;
+    }
+
+    main#directory article.list section a.c-url {
+        font-size: .8rem;
+        width: 18%;
+        padding-left: .3rem;
+    }
+
+    main#directory article.list section p.c-ml {
+        font-size: .8rem;
+        padding-left: 20px;
+        width: 15%;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 @media (min-width: 1283px) {

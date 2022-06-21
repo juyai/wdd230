@@ -1,85 +1,85 @@
 {
-  "companies": [
-    {
-      "name": "COLD CAKE / CAKE DESIGN",
-      "address": "Juan Montalvo St between Atahualpa and Guayaquil, Otavalo",
-      "phone": "+593 99 409 7634",
-      "url": "https://www.facebook.com/coldcake.otavalo",
-      "alturl": "www.coldcake.com",
-      "image": "images/cold-cake.jpg",
-      "membershiplevel": "Silver Member"
-    },
-    {
-      "name": "WUASIPUNGO",
-      "address": "Modesto Jaramillo and Cristobal Colón St next to Otauto, Otavalo",
-      "phone": "+593 99 118 6557",
-      "url": "https://www.facebook.com/wasipungo.ec",
-      "alturl": "www.wuasipungo.com",
-      "image": "images/wasipungo.jpg",
-      "membershiplevel": "Gold Member"
-    },
-    {
-      "name": "LOS CHOCLITOS",
-      "address": "Sucre street between Quito and Quiroga, Otavalo",
-      "phone": "+593 98 918 1790",
-      "url": "https://www.facebook.com/cadenarincondelsabor",
-      "alturl": "www.loschoclitos.com",
-      "image": "images/choclitos.jpg",
-      "membershiplevel": "Gold Member"
-    },
-    {
-      "name": "PATITAS",
-      "address": "Atahualpa 10-10 and Morales 100450, Otavalo",
-      "phone": "+593 95 993 9110",
-      "url": "https://www.facebook.com/PatitasPeluqueri",
-      "alturl": "www.patitas.com",
-      "image": "images/patitas.jpg",
-      "membershiplevel": "Gold Member"
-    },
-    {
-      "name": "Shanandoa (The Pie Shop)",
-      "address": "Salinas 5-15 and Modesto Jaramillo St, Otavalo",
-      "phone": "+593 62 921 465",
-      "url": "https://www.facebook.com/criaderosanta",
-      "alturl": "www.shanandoa.com",
-      "image": "images/shanandoa.jpg",
-      "membershiplevel": "Bronze Member"
-    },
-    {
-      "name": "HOTEL INDIO INN",
-      "address": "Bolívar 904 and Abdón Calderón St, Otavalo",
-      "phone": "+593 6 2922 922",
-      "url": "https://www.hotelelindioinn.com/",
-      "alturl": "www.hotelindioinn.com",
-      "image": "images/indio-inn.jpg",
-      "membershiplevel": "Gold Member"
-    },
-    {
-      "name": "MONSERRATH STATIONERY",
-      "address": "Sucre and Juan Montalvo St, Otavalo",
-      "phone": "+593 062 927 372",
-      "url": "https://www.papeleriamonserrath.com/",
-      "alturl": "www.monserrathstat.com",
-      "image": "images/monserrat.jpg",
-      "membershiplevel": "Gold Membe"
-    },
-    {
-      "name": "LAS PAPITAS DE LA ABUELA",
-      "address": "Morales St and Sucre 12-03, Otavalo",
-      "phone": "+593 96 710 1259",
-      "url": "https://www.facebook.com/people/Las-Papitas-De-La-Abuela/100057669699150/",
-      "alturl": "www.laspapitasabuela.com",
-      "image": "images/papitas.jpg",
-      "membershiplevel": "Brozen Member"
-    },
-    {
-      "name": "EL PILA",
-      "address": "Sucre St and Morales St 593, Otavalo",
-      "phone": "+593 96 718 15224",
-      "url": "https://www.facebook.com/CevichochosElPilaIOficial",
-      "alturl": "www.elpila.com",
-      "image": "images/el-pila.jpg",
-      "membershiplevel": "Silver Member"
-    }  
-  ]
-}
+    "companies": [
+      {
+        "name": "COLD CAKE / CAKE DESIGN",
+        "address": "Juan Montalvo St between Atahualpa and Guayaquil, Otavalo",
+        "phone": "+593 99 409 7634",
+        "url": "https://www.facebook.com/coldcake.otavalo",
+        "alturl": "www.coldcake.com",
+        "image": "images/cold-cake.jpg",
+        "membershiplevel": "Silver Member"
+      },
+      {
+        "name": "WUASIPUNGO",
+        "address": "Modesto Jaramillo and Cristobal Colón St next to Otauto, Otavalo",
+        "phone": "+593 99 118 6557",
+        "url": "https://www.facebook.com/wasipungo.ec",
+        "alturl": "www.wuasipungo.com",
+        "image": "images/wasipungo.jpg",
+        "membershiplevel": "Gold Member"
+      },
+      {
+        "name": "LOS CHOCLITOS",
+        "address": "Sucre street between Quito and Quiroga, Otavalo",
+        "phone": "+593 98 918 1790",
+        "url": "https://www.facebook.com/cadenarincondelsabor",
+        "alturl": "www.loschoclitos.com",
+        "image": "images/choclitos.jpg",
+        "membershiplevel": "Gold Member"
+      },
+      {
+        "name": "PATITAS",
+        "address": "Atahualpa 10-10 and Morales 100450, Otavalo",
+        "phone": "+593 95 993 9110",
+        "url": "https://www.facebook.com/PatitasPeluqueri",
+        "alturl": "www.patitas.com",
+        "image": "images/patitas.jpg",
+        "membershiplevel": "Gold Member"
+      },
+      {
+        "name": "Shanandoa (The Pie Shop)",
+        "address": "Salinas 5-15 and Modesto Jaramillo St, Otavalo",
+        "phone": "+593 62 921 465",
+        "url": "https://www.facebook.com/criaderosanta",
+        "alturl": "www.shanandoa.com",
+        "image": "images/shanandoa.jpg",
+        "membershiplevel": "Bronze Member"
+      },
+      {
+        "name": "HOTEL INDIO INN",
+        "address": "Bolívar 904 and Abdón Calderón St, Otavalo",
+        "phone": "+593 6 2922 922",
+        "url": "https://www.hotelelindioinn.com/",
+        "alturl": "www.hotelindioinn.com",
+        "image": "images/indio-inn.jpg",
+        "membershiplevel": "Gold Member"
+      },
+      {
+        "name": "MONSERRATH STATIONERY",
+        "address": "Sucre and Juan Montalvo St, Otavalo",
+        "phone": "+593 062 927 372",
+        "url": "https://www.papeleriamonserrath.com/",
+        "alturl": "www.monserrathstat.com",
+        "image": "images/monserrat.jpg",
+        "membershiplevel": "Gold Membe"
+      },
+      {
+        "name": "LAS PAPITAS DE LA ABUELA",
+        "address": "Morales St and Sucre 12-03, Otavalo",
+        "phone": "+593 96 710 1259",
+        "url": "https://www.facebook.com/people/Las-Papitas-De-La-Abuela/100057669699150/",
+        "alturl": "www.laspapitasabuela.com",
+        "image": "images/papitas.jpg",
+        "membershiplevel": "Brozen Member"
+      },
+      {
+        "name": "EL PILA",
+        "address": "Sucre St and Morales St 593, Otavalo",
+        "phone": "+593 96 718 15224",
+        "url": "https://www.facebook.com/CevichochosElPilaIOficial",
+        "alturl": "www.elpila.com",
+        "image": "images/el-pila.jpg",
+        "membershiplevel": "Silver Member"
+      }  
+    ]
+  }
