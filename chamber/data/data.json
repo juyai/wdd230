@@ -5,7 +5,7 @@
       "address": "Juan Montalvo St between Atahualpa and Guayaquil, Otavalo",
       "phone": "+593 99 409 7634",
       "url": "https://www.facebook.com/coldcake.otavalo",
-      "alt-url": "www.coldcake.com",
+      "alturl": "www.coldcake.com",
       "image": "images/cold-cake.jpg",
       "membershiplevel": "Silver Member"
     },
@@ -14,7 +14,7 @@
       "address": "Modesto Jaramillo and Cristobal Colón St next to Otauto, Otavalo",
       "phone": "+593 99 118 6557",
       "url": "https://www.facebook.com/wasipungo.ec",
-      "alt-url": "www.wuasipungo.com",
+      "alturl": "www.wuasipungo.com",
       "image": "images/wasipungo.jpg",
       "membershiplevel": "Gold Member"
     },
@@ -23,7 +23,7 @@
       "address": "Sucre street between Quito and Quiroga, Otavalo",
       "phone": "+593 98 918 1790",
       "url": "https://www.facebook.com/cadenarincondelsabor",
-      "alt-url": "www.loschoclitos.com",
+      "alturl": "www.loschoclitos.com",
       "image": "images/choclitos.jpg",
       "membershiplevel": "Gold Member"
     },
@@ -32,7 +32,7 @@
       "address": "Atahualpa 10-10 and Morales 100450, Otavalo",
       "phone": "+593 95 993 9110",
       "url": "https://www.facebook.com/PatitasPeluqueri",
-      "alt-url": "www.patitas.com",
+      "alturl": "www.patitas.com",
       "image": "images/patitas.jpg",
       "membershiplevel": "Gold Member"
     },
@@ -41,7 +41,7 @@
       "address": "Salinas 5-15 and Modesto Jaramillo St, Otavalo",
       "phone": "+593 62 921 465",
       "url": "https://www.facebook.com/criaderosanta",
-      "alt-url": "www.shanandoa.com",
+      "alturl": "www.shanandoa.com",
       "image": "images/shanandoa.jpg",
       "membershiplevel": "Bronze Member"
     },
@@ -50,7 +50,7 @@
       "address": "Bolívar 904 and Abdón Calderón St, Otavalo",
       "phone": "+593 6 2922 922",
       "url": "https://www.hotelelindioinn.com/",
-      "alt-url": "www.hotelindioinn.com",
+      "alturl": "www.hotelindioinn.com",
       "image": "images/indio-inn.jpg",
       "membershiplevel": "Gold Member"
     },
@@ -59,7 +59,7 @@
       "address": "Sucre and Juan Montalvo St, Otavalo",
       "phone": "+593 062 927 372",
       "url": "https://www.papeleriamonserrath.com/",
-      "alt-url": "www.monserrathstat.com",
+      "alturl": "www.monserrathstat.com",
       "image": "images/monserrat.jpg",
       "membershiplevel": "Gold Membe"
     },
@@ -68,7 +68,7 @@
       "address": "Morales St and Sucre 12-03, Otavalo",
       "phone": "+593 96 710 1259",
       "url": "https://www.facebook.com/people/Las-Papitas-De-La-Abuela/100057669699150/",
-      "alt-url": "www.laspapitasabuela.com",
+      "alturl": "www.laspapitasabuela.com",
       "image": "images/papitas.jpg",
       "membershiplevel": "Brozen Member"
     },
@@ -77,7 +77,7 @@
       "address": "Sucre St and Morales St 593, Otavalo",
       "phone": "+593 96 718 15224",
       "url": "https://www.facebook.com/CevichochosElPilaIOficial",
-      "alt-url": "www.elpila.com",
+      "alturl": "www.elpila.com",
       "image": "images/el-pila.jpg",
       "membershiplevel": "Silver Member"
     }  
