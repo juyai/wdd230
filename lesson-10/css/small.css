@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&display=swap');
+
+:root {
+    --back1: #5388A7;
+    --back2: #BEE6DE;
+    --font: Anek Gujarati, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+h1 {
+    background-color: var(--back1);
+    color: white;
+    text-align: center;
+    letter-spacing: .3rem;
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 600px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#container {
+    background-color: var(--back2);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#icon-section {
+    grid-column: 1/2;
+    text-align: center;
+    padding: 15px;
+}
+
+figure {
+    border: .5px solid var(--back1);
+    width: 70%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+figure img {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+figcaption {
+   background-color: var(--back1); 
+   padding: 5px;
+   color: white;
+   margin-top: -10px;
+}
+
+#info-section {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 15px;
+}
+
+p {
+    text-align: center;
+}
+
+span {
+    font-size: 1.8rem;
+    color: #5388A7;
+    margin-bottom: 0;
+}
+
+#info-section p {
+    font-weight: bold;
+}
+
+.info {
+    margin: 5px;
+}
+
+.info span {
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+}
+
+p#last {
+    background-color: var(--back2);
+    margin-top: 0;
+    border-top: #A59B8D;
+    font-size: 13px;
+}
