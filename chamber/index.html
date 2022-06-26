@@ -11,6 +11,7 @@
     <title>Otavalo Valley Chamber | Home</title>
     <script src="js/scripts.js" defer></script>
     <script src="js/windchill.js" defer></script>
+    <script src="https://kit.fontawesome.com/1b644c8309.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -63,41 +64,20 @@
             <h1>Welcome to Otavalo Valley</h1>
             <a href="join.html">Join the Chamber</a>
         </div>
-        <div class="event">
-            <h2>2nd Mushuc Runa Expo Fair</h2>
-            <p id="emojis">🤹🏻‍♀️🎪🧵🥦🍳</p>
-            <p class="date">Join us for this grand expo fair, Saturday at 3:00 pm</p>
-            <p id="more">more info...</p>
-        </div>
-        <div class="weather">
-            <h2>Weather</h2>
-            <div class="graphic">
-                <img src="images/cloudy.png" alt="Rainy day">
-                <h3 class="temperature">
-                    <span id="t">33</span>
-                    <span>&#176;C</span>
-                </h3>
+        <div id="medium-b">
+            <div class="event">
+                <h2>2nd Mushuc Runa Expo Fair</h2>
+                <p id="emojis">🤹🏻‍♀️🎪🧵🥦🍳</p>
+                <p class="date">Join us for this grand expo fair, Saturday at 3:00 pm</p>
+                <p id="more">more info...</p>
             </div>
-            <h3 id="forecast">Partly Cloudy</h3>
-            <hr class="line">
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="text-right">Wind Speed:</td>
-                        <td>
-                            <span id="s">2.5</span>
-                            <span>km/h</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-right">Wind Chill:</td>
-                        <td>
-                            <span id="wind-chill"></span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="wContainer">
+                <h2><i class='fas fa-map-marker-alt'></i> Otavalo Valley Weather</h2>
+                <div id="wDisplay">
+                </div>
+            </div>   
         </div>
+        
         <article class="news">
             <h2>New Release</h2>
             <p>
@@ -114,34 +94,36 @@
                 </p>
         </article>
         <div class="spotlight">
-            <div id="spot1" class="spot">
-                <h2>COLD CAKE / CAKE DESIGN</h2>
-                <img src="images/cold-cake.jpg" alt="Cold Cake">
-                <p class="cake-quote">
-                    Bat with love 🥰<br>
-                    Bake with Passion 👩🏻‍🍳👨🏻‍🍳<br>
-                    And decorate with the heart😍
-                </p>
-                <hr class="line"> 
-                <div class="links">
-                    <a href="#">info@cold-cake.com</a><br>
-                    <a href="tel:+593 99 409 7634">+593 99 409 7634</a> 
-                    <a href="https://www.facebook.com/coldcake.otavalo">Website</a>
-                </div>  
-            </div>
-            <div id="spot2" class="spot">
-                <h2>WUASIPUNGO</h2>
-                <img src="images/wasipungo.jpg" alt="Wasipungo">
-                <p class="wasi-quote">
-                    Creating your style...
-                </p>
-                <hr class="line"> 
-                <div class="links">
-                    <a href="#">hello@wuasipungo.com</a><br>
-                    <a href="tel:+593 99 118 6557">+593 99 118 6557</a> 
-                    <a href="https://www.facebook.com/wasipungo.ec">Website</a>
-                </div>
-            </div>
+            <section id="medium-cards">
+                <div id="spot1" class="spot">
+                    <h2>COLD CAKE / CAKE DESIGN</h2>
+                    <img src="images/cold-cake.jpg" alt="Cold Cake">
+                        <p class="cake-quote">
+                            Bat with love 🥰<br>
+                            Bake with Passion 👩🏻‍🍳👨🏻‍🍳<br>
+                            And decorate with the heart😍
+                        </p>
+                        <hr class="line"> 
+                        <div class="links">
+                            <a href="#">info@cold-cake.com</a><br>
+                            <a href="tel:+593 99 409 7634">+593 99 409 7634</a> 
+                            <a href="https://www.facebook.com/coldcake.otavalo">Website</a>
+                        </div>  
+                        </div>
+                        <div id="spot2" class="spot">
+                            <h2>WUASIPUNGO</h2>
+                            <img src="images/wasipungo.jpg" alt="Wasipungo">
+                            <p class="wasi-quote">
+                                Creating your style...
+                            </p>
+                            <hr class="line"> 
+                            <div class="links">
+                                <a href="#">hello@wuasipungo.com</a><br>
+                                <a href="tel:+593 99 118 6557">+593 99 118 6557</a> 
+                                <a href="https://www.facebook.com/wasipungo.ec">Website</a>
+                            </div>
+                        </div>
+            </section>
             <div id="hideSmall1" class="spot">
                 <h2>LOS CHOCLITOS</h2>
                 <img src="images/choclitos.jpg" alt="Los Choclitos">
