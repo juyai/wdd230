@@ -2,6 +2,7 @@
 const display = document.querySelector('#wDisplay');
 const wDay = document.createElement('p');
 const wForecast = document.createElement('div');
+const graphic = document.createElement('section');
 const figure = document.createElement('figure');
 const img = document.createElement('img');
 const figcaption = document.createElement('figcaption');
@@ -15,6 +16,7 @@ const maxT = document.createElement('span');
 const wind = document.createElement('div');
 const windS = document.createElement('p');
 const windC = document.createElement('p');
+const wLink = document.createElement('p');
 
 const URL = '//api.openweathermap.org/data/2.5/weather?q=Otavalo&units=metric&appid=c44e121cd94b7a4522ef46581d75c39e';
 
@@ -42,7 +44,7 @@ function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${ct} &deg;C</strong>`;
     
     maxT.innerHTML = `<strong>&#8896;</strong> ${weatherData.main.temp_max.toFixed(0)} &deg;C`;
-    minT.innerHTML = `<strong>&#8897;</strong> ${weatherData.main.temp_min.toFixed(0)} &deg;C &nbsp;`;
+    minT.innerHTML = `<strong>&#8897;</strong> ${weatherData.main.temp_min.toFixed(0)} &deg;C <br>`;
     let ws = parseFloat(weatherData.wind.speed).toFixed(1);
     feelsLike.innerHTML = `<strong>Feels Like:</strong> ${weatherData.main.feels_like.toFixed(0)} &deg;C`
     windS.innerHTML = `<strong>Wind Speed:</strong> ${ws} km/h`;
@@ -69,13 +71,6 @@ function  displayResults(weatherData) {
 
   }
 
-//let t = parseFloat(document.querySelector('#t').textContent);
-//const s = parseFloat(document.querySelector('#s').textContent);
-
-
-
-
-
 const days = [
     'Sunday',
     'Monday',
@@ -89,13 +84,20 @@ const days = [
 const dayIndex = new Date().getDay();
 const dayName = days[dayIndex];
 
+
+wLink.innerHTML = `Weather Forecast Provided By: "<a href="https://OpenWeatherMap.com">OpenWeatherMap.com</a>"`;
+
 wDay.textContent = `${dayName}`;
 wDay.classList.add('wDay');
 display.appendChild(wDay);
 console.log(`${nombreDia}`);
 display.appendChild(wForecast);
+display.appendChild(wLink);
+wLink.classList.add('wLink');
 wForecast.classList.add('wForecast');
-wForecast.appendChild(figure);
+wForecast.appendChild(graphic);
+graphic.classList.add('graphic');
+graphic.appendChild(figure);
 figure.appendChild(img);
 figure.appendChild(figcaption);
 wForecast.appendChild(temperature);

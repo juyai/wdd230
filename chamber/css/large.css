@@ -1,4 +1,5 @@
 @media (min-width: 800px) {
+/*--------------------------------HEADER-------------------------------------------*/
 
     header {
         background-color: var(--primary-color);
@@ -74,14 +75,43 @@
     }
 
     div.event {
+        grid-column: 1/2;
         grid-row: 1/2;
         margin: 0;
     }
 
+    div.event h2 {
+        padding-bottom: 0;
+    }
+
+    div.event #emojis {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
     div.wContainer {
+        grid-column: 1/2;
         grid-row: 2/3;
         width: 100%;
-        margin: 0;
+        margin: 0; 
+    }
+
+    div.wContainer h2 {
+        margin: auto;
+    }
+
+    div#wDisplay p.wDay {
+        font-size: 1rem;
+        align-self: baseline;   
+    }
+
+    .wLink {
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    .graphic {
+        max-width: min-content;
     }
 
     #hideSmall2 {
@@ -103,38 +133,53 @@
         background-position: center;
     }
 
+    div.hero h1 {
+        font-size: 1.29rem;
+    }
+
     section {
         padding: 0;
     }
 
-    .spotlight {
+    div.spotlight {
         grid-column: 3/4;
         grid-row: 1/4;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    #medium-cards {
-        display: flex;
-        flex-direction: column;
+        row-gap: 1rem;
     }
 
     #hideSmall1 {
-        display: block;
+        display: flow-root;
     }
 
-    div#spot1, div#spot2 {
-        margin-bottom: 1rem;
+    div#spot1, 
+    div#spot2 ,
+    div#hideSmall1 {
+        padding: .5rem;  
     }
 
-    div.weather {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin-left: 15px;
-        margin-right: 3px;
-        width: auto;
+    div#spot1 h2, 
+    div#spot2 h2,
+    div#hideSmall1 h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
+    }
+
+    div#spot1 img, div#spot2 img, div#hideSmall1 img {
+       max-width: 80%;
+    }
+
+    div#spot1 a, div#spot2 a, div#hideSmall1 a {
+        padding: 0;
+        margin: 0;
+    }
+
+    #hideSmall2 {
+        padding: 1rem;
+    }
+
+    #hideSmall2 a {
+        width: fit-content;
+        margin: 2rem auto 2rem auto;
     }
 
     .news {
@@ -144,134 +189,174 @@
 
     /* ------------------- FOOTER -------------------------- */
 
-    footer .info3 {
-        max-width: 100%;
-        padding: 6px 0 5px 0;
-        line-height: 0.2rem;
-        grid-column: 1/4;
-        display: grid;
-        grid-template-columns: repeat(4, max-content);
-        grid-template-rows: 1fr;
-        column-gap: 14px;
-        margin: 0 auto;
-    }
-
     footer picture#logo2 img#resize {
         max-width: 80%;
-        padding-left: 20px;
     }
 
-    footer .info2 a {
-        font-size: 13px;
+    footer .info1-text {
+        margin-top: 1rem;
     }
 
-    footer .info3 p:nth-of-type(1) {
-        grid-column: 1/2;
-        justify-self: end;
-    }
-
-    footer .info3 p:nth-of-type(1)::after {
-        content: "|";
-    }
-
-    footer .info3 h2 {
-        grid-column: 2/3;
-        font-size: 12px;
-    }
-
-    footer .info3 h2::after {
-        content: "|";
-    }
-
-    footer .info3 p:nth-of-type(2) {
-        grid-column: 3/4;
-        justify-self: start;
-    }
-
-    footer .info3 p:nth-of-type(2)::after {
-        content: "|";
-    } 
-
-    footer .info3 p:nth-of-type(3) {
-        grid-column: 4/5;
-        grid-row: 1/2;
-        margin-left: 0;
-        margin-top: 9px;
-    }
-
-    #main-discover {
-        margin: 0;
-    }
-
-    .discover5 {
-        margin-bottom: 0;
-    }
-
-    #ota {
-        display: block;
-    }
-
-    #ota #oHide1, #ota #oHide2, #ota #oHide {
-        display: none;
-    }
-
-    #ota h2,
-    .discover1 h2,
-    .discover2 h2, 
-    .discover3 h2,
-    .discover4 h2,
-    .discover5 h2 {
-        font-size: 1.5rem;
-        padding: 1rem 0 1rem 0;
-    }
-
-    table, tr td {
-        padding: .5rem;
-        margin-bottom: .3rem;
-    }
-
-    td:nth-child(even) {
-        text-align: center;
+    footer .info1-text h3 {
         font-size: 1rem;
     }
 
-    .gBox h2{
-        font-size: 1.6rem;
-        padding: .5rem;
+    footer .info1-text p {
+        font-size: 1rem;
+        line-height: normal;
     }
 
-    #join-main h2 {
-        font-size: 2rem;
+    footer .info3 * {
+        font-size: .7rem;
     }
 
-    #join-main p {
+    footer .info3 #fourth {
+        line-height: 1.8rem;
+    }
+
+    /*------------------------------discover page--------------------------- */
+
+    #main-discover {
+        display: block;
+        margin: 0;
+    }
+
+    #discover-grid {
+        grid-column: 1/2;
+        grid-row: 3/2;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: .5rem;
+        width: 99%;
+        margin: 0;
+    }
+
+    table#table1, #table1 tr td {
+        width: 80%;
+        padding: 1.3rem;
+    }
+
+    table#table2, #table2 tr td {
+        padding: .5rem; 
+        width: min-content;
+    }
+
+    .discover2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.discover2 h2 {
+        margin: initial;
         font-size: 1.3rem;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .discover2 img {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        width: 70%;
+        text-align: center;
+    }
+    .discover2 p {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        font-size: .8rem;
+        padding: 0;
+    }
+
+    .discover3 img {
+        width: 80%;
+    }
+
+    .discover5 {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .discover5 h2 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .discover5 img {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .discover5 ul {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+    
+    /*------------------------------join page--------------------------- */
+    
+    main#join-main {
+        display: block;
+    }
+
+    div#join-title h2 {
+        font-size: 3rem;
+    }
+
+    div#join-title p {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        letter-spacing: .2rem;
     }
 
     #join-app {
         display: grid;
         grid-template-columns: 50% 50%;
-        background-color: white;
+        padding-top: 0;
+        align-items: start;
+        column-gap: 1rem;
     }
 
     form {
         grid-column: 1/2;
+        padding: 2rem 1rem 1rem 1rem;
+        margin-top: 0;
+        border-bottom: none;
+    }
+
+    form fieldset {
+        padding: 1rem 1rem 3rem 1rem;
+        margin-bottom: 2rem;
     }
 
     #b-container {
         display: grid;
         grid-column: -1/-2;
-        background-color: white;
         align-content: center;
         max-width: 30rem;
     }
 
     main#join-main h2#sml {
-       font-size: 1.2rem;
+        font-size: 1rem;
+       border: none;
+    }
+
+    .level {
+        width: 85%;
+    }
+
+    .level ul {
+        padding-left: 3%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 
     .level h3 {
         font-size: 1.1rem;
+        margin-bottom: 0;
+        padding: 0;
     }
 
     .level h4 {
@@ -282,18 +367,36 @@
         font-size: 1rem;
     }
 
+    form input.joinbtn {
+        margin: 0 0 1rem 2%;
+    }
+
+    /*--------------------------------thank you page-------------------------------*/
+    #t-container {
+        display: block;
+    }
+
     #thanks {
         max-width: 30rem;
     }
 
+    #bt {
+        padding: 1rem 1.5rem;
+    }
+
     #thanks h2 {
         font-size: 4rem;
+        padding: 0;
+        margin: 2% auto 2% auto;
     }
 
     #thanks p {
         font-size: 2rem;
-        line-height: 2.5rem;
+        line-height: 3rem;
+        padding: 0 ;
     }
+
+    /*----------------------directory page------------------------*/
 
     main#directory article.grid {
         grid-template-columns: repeat(auto-fit, minmax(372px, 1fr));
@@ -329,6 +432,48 @@
         width: 15%;
     }
 
+    /*------------------------contact page---------------------------*/
+    main#contact-main {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-contact h1 {
+        font-size: 7rem;
+
+    }
+
+    div#contact-us {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    div#contact-us h2 {
+        grid-column: 1/-1;
+        font-size: 4rem;
+    }
+
+    div#contact-us h3 {
+        grid-column: 1/-1;
+        margin-bottom: 5rem;
+    }
+
+    div#contact-form {
+        grid-column: 1/2;
+    }
+
+    div#contact {
+        grid-column: 2/3;
+        margin: 1rem 4rem 0 0;
+    }
+
+    div#contact div.social-icons img {
+        width: 15%;
+    }
+
 }
 
 @media (min-width: 970px) {
@@ -343,6 +488,7 @@
         display: block;
     }
 }
+
 
 @media (min-width: 1151px) {
     #currentDate {
@@ -386,25 +532,6 @@
     .social-icons a img {
         max-width: 40%;
     }
-
-    footer picture#logo2 img#resize {
-        max-width: 60%;
-        padding-left: 20px;
-    }
-
-    footer .info1 h3 {
-        font-size: 20px;
-    }
-    
-    footer .info1 p {
-        font-size: 16px;
-        line-height: 1.5rem;
-    }
-
-    footer .info2 a {
-        font-size: 16px;
-        line-height: 1.5rem;
-    }
 }
 
 @media (min-width: 1300px) {
@@ -415,28 +542,5 @@
 
     #chamber-name1 p {
         font-size: 30px;
-    }
-
-    footer picture#logo2 img#resize {
-        max-width: 50%;
-        padding-left: 20px;
-    }
-
-    footer .info1 {
-        margin-left: -60px;
-    }
-
-    footer .info1 h3 {
-        font-size: 20px;
-    }
-    
-    footer .info1 p {
-        font-size: 16px;
-        line-height: 1.5rem;
-    }
-
-    footer .info2 a {
-        font-size: 16px;
-        line-height: 1.5rem;
     }
 }

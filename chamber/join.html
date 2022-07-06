@@ -49,8 +49,10 @@
         <p id="currentDate"></p>
     </header>
     <main id="join-main">
-        <h2>JOIN US TODAY!</h2>
-        <p>Otavalo Valley Chamber Membership Application Form</p>
+        <div id="join-title">
+            <h2>JOIN US TODAY!</h2>
+            <p>Otavalo Valley Chamber Membership Application Form</p>
+        </div>
         <div id="join-app">
             <form action="thankyou.html" method="get">
                 <fieldset>
@@ -143,7 +145,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="level">
+                    <div id="no" class="level">
                         <h3>Gold Membership</h3>
                         <h4>As low as $350 a year</h4>
                         <ul>
@@ -151,8 +153,7 @@
                                 All the benifits of our Bronze and Silver members and more...
                             </li>
                             <li>
-                                For more information about our Gold Membership please contact
-                                otavalovalleyccinfo@gmail.com
+                                Contact us for more information about our Gold Membership 
                             </li> 
                         </ul>
                     </div>
@@ -161,33 +162,33 @@
         </div>    
     </main>
     <footer>
-        <picture id="logo2">
-            <source srcset="images/logo.webp" type="image/webp" >
-           <img  id="resize" src="images/logo.png" alt="Chamber Logo"> 
-        </picture>
-        <div class="info1">
-            <h3>Otavalo Valley Chamber of Commerce</h3>
-            <p> 
-                Quiroga & Quito<br>
-                Otavalo, Imbabura
-            </p>
-        </div>            
+        <div id="info1">
+            <picture id="logo2">
+                <source srcset="images/logo.webp" type="image/webp" >
+            <img  id="resize" src="images/logo.png" alt="Chamber Logo"> 
+            </picture>
+            <div class="info1-text">
+                <h3>Otavalo Valley Chamber of Commerce</h3>
+                <p> 
+                    Quiroga & Quito<br>
+                    Otavalo, Imbabura
+                </p>
+            </div>   
+        </div>        
         <div class="info2">
             <a href="mailto:info@otavalovalleycc.org">info@otavalovalleycc.org</a>
             <br>
             <a href="tel:+5398187458">+(593) 06-2920626</a> 
             <br>
-            
             <a href="#">📍Location Map</a>       
         </div> 
         <hr>
         <div class="info3">
-            <p>&copy; <span id="currentYear"></span> Otavalo Valley Chamber &nbsp;</p>
-            <h3>Yurinii Fuentes &nbsp; </h3>  
-            <p>WDD 230 Project &nbsp; </p>  
-            <p>Last Modification: 
-                <span id="lastUpdated"></span>
-            </p>
+            <p id="first"><span id="insertion1"></span> Otavalo Valley Chamber &nbsp; &nbsp;</p>
+            <p id="second">&nbsp; Yurinii Fuentes &nbsp; &nbsp;</p>
+            <p id="third">&nbsp; &nbsp;WDD 230 Project &nbsp; &nbsp;</p>   
+            <a id="fourth" href="https://OpenWeatherMap.com">&nbsp; &nbsp; OpenWeatherMap.com &nbsp; &nbsp;</a>
+            <p id="fifth">&nbsp; &nbsp;Last Modification: <span id="insertion2"></span></p>
         </div>                  
     </footer>
 </body>

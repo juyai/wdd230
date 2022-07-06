@@ -1,12 +1,17 @@
 /*35rem is also 560px window*/
 @media only screen and (min-width: 35rem) {
-     #chamber-name1 h1 {font-size: 25px;}
+     
+    /*--------------------------------HEADER-------------------------------------------*/
+    
+    #chamber-name1 h1 {font-size: 25px;}
 
     #chamber-name1 p { font-size: 15px;}
 
     .social-icons a img {max-width: 60%;}
 
     #Btn { margin-top: 45px;}
+
+    /*--------------------------------MAIN-------------------------------------------*/
 
     main {
         display: grid;
@@ -16,9 +21,27 @@
         grid-row-gap: 1rem;
     }
 
+    /*--------------------------------HOME PAGE----------------------------------------*/
+
     .hero {
         grid-row: 1/2;
         margin-top: 5px;
+    }
+
+    div.hero h1 {
+        font-size: 2rem;
+        padding: .2rem;
+        color: var(--primary-color);
+        text-shadow: 0 0 5px rgba(39, 22, 81, 0.5);
+    }
+
+    div.hero a {
+        font-size: .95rem;
+    }
+
+    div.hero a {
+        padding: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .news {
@@ -52,17 +75,16 @@
         margin: 0 0 0 .5rem;   
     }
 
-    .wForecast {
-        flex-direction: column;
-        text-align: center;
-    }
-
     div.event {
         margin: 0 .5rem 0 0;
     }
 
 
     div#spot1 h2, div#spot2 h2, div#hideSmall1 h2 {font-size: 1.1rem;}
+    
+    div#spot1 a, div#spot2 a, div#hideSmall1 a {
+        font-size: 1rem;
+    }
 
     #hideSmall2 {
         display: block;
@@ -72,20 +94,22 @@
         text-align: center;
         border: none;
         box-shadow: 0 0 15px 0px black;
+        font-weight: bold;
     }
     
     #hideSmall2 a {
-        background-color: var(--accent2-color);
+        background-color: var(--accent-color);
         text-decoration: none;
+        text-shadow: .1rem .1rem .1rem var(--primary-color);
         border-radius: 13PX;
-        line-height: 1.3rem;
-        padding: 15px 16px 15px 16px;
+        padding: 1rem;
         color: white;
         font-family: var(--nav-font);
-        font-size: 20px;
+        font-size: 1.5rem;
         font-weight: bolder;
-        box-shadow: 0 0.1px 10px 0 rgb(248, 248, 246);
-        margin: 20px auto 0 auto;
+        box-shadow: .4rem 0 .8rem .4rem white;
+        cursor: pointer;
+        margin: 20px auto 10px auto;
         width: 90%;
         box-sizing: border-box;
         display: block;
@@ -93,9 +117,12 @@
     }
 
     #hideSmall2 p {
-        font-size: 18px;
-        padding: 25px 25px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: bold;
         border:none;
+        letter-spacing: .1rem;
+        padding: 0.7rem;
     }
 
     .event {
@@ -104,212 +131,275 @@
     }
 
     div.event h2 {
-        font-size: 20px;
+        font-size: 1.5rem;
         padding-bottom: 20px;
     }
 
     div.event #emojis {
-        padding-bottom: 20px;
-        font-size: 2.5rem;
-    }
-
-    div.event .date, div.event #more {
-        font-size: 20px;
-        line-height: 2rem;
+        font-size: 2rem;
     }
  
+    div.event #more {
+        font-size: 1.1rem;
+    } 
+
     div.event #more {padding: 0;}
 
+    .wForecast figure {
+        margin: 6px;
+    }
+
+    .temperature {
+        margin: 2rem 0 0 0;
+    }
+    
+    .wLink {
+        font-size: .60rem;
+        padding: 0 .3rem 0 .3rem;
+    }
+/*---------------------------------------------FOOTER------------------------------------------------------*/
     footer {
         display: grid;
-        grid-template-columns: 20% 40% 40%;
+        grid-template-columns: 60% 40%;
+        padding: .5rem;
+    }
+
+    #info1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        column-gap: 1rem;
     }
 
     footer picture#logo2 img#resize {
-        max-width: 65%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        max-width: 100%;
+        padding: 15px 0 0 12px
     }
 
-    footer .info1 {
-        margin-top: 15px;
-    }
-
-    footer .info1 h3 {
-        margin: 7px 0 0 0;
-        font-size: 15px;
-    }
-
-    footer .info1 h3 {
+    footer .info1-text {
+        grid-column: 2/3;
+        grid-row: 1/2;
         text-align: left;
-        margin: 20px 0 0 0;
+        margin-top: .5rem;
     }
 
-    footer .info1 p {
+    footer .info1-text h3 {
+        font-size: .9rem;
         text-align: left;
-        font-size: 12px;
+    }
+
+    footer .info1-text p {
+        font-size: .85rem;
+    }
+
+    footer .info2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: .2rem
     }
 
     footer .info2 a {
-        line-height: 1rem;
+        line-height: 2.5rem;
     }
     
-
     footer .info2 {
-        margin: 35px 0 0 0;
-        font-size: 12px;
+        font-size: .9rem;
+        justify-self: self-end;
+        margin-right: 1rem;
     }
 
     footer hr {
-        margin: 20px 10px 0 10px;
         max-width: 100%;
-        grid-column: span 3;
-        grid-row: 2;
+        grid-column: span 2;
+        grid-row: 2/3;
 
     }
 
     footer .info3 {
-        padding: 6px 0 5px 0;
-        line-height: 0.2rem;
-        grid-column: 1/4;
+        grid-column: span 2; 
+        grid-row: 3/4;
         display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 14px;
-        margin-bottom: -15px;
-        margin-left: 50px;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+        width: fit-content;
+        margin: auto;
     }
 
-    footer .info3 p:nth-of-type(1) {
+    footer .info3 * {
+        font-size: .5rem;
+        line-height: .5rem;
+    }
+
+    footer .info3 #first {
         grid-column: 1/2;
         grid-row: 1/2;
-        justify-self: end;
+    }
+
+    footer .info3 #second {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    footer .info3 #third {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    
+    footer .info3 #fourth {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        line-height: 1.5rem;
+    }
+
+    footer .info3 #fifth {
+        grid-column: 5/6;
+        grid-row: 1/2;
     }
 
     footer .info3 p:nth-of-type(1)::after {
         content: "|";
     }
 
-    footer .info3 h2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        font-size: 12px;
-    }
-
-    footer .info3 h2::after {
-        content: "|";
-    }
-
-    footer .info3 p:nth-of-type(2) {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        justify-self: start;
-
-    }
-
     footer .info3 p:nth-of-type(2)::after {
+        content: "|";
+        font-weight: lighter;
+    } 
+    
+    footer .info3 p:nth-of-type(3)::after {
         content: "|";
     } 
 
-    footer .info3 p:nth-of-type(3) {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        margin:-1px 0 0 -50px;
-        padding: 3px 0 3px 0;
-    }
+    footer .info3 a::after {
+        content: "|";
+    } 
 
+/*--------------------DISCOVER PAGE---------------------------*/
     #main-discover {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: block;
     }
 
-    #top {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-
-    #user-visits {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    .statistics {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    #discover-grid {
+    .discover2 {
         display: grid;
         grid-template-columns: auto auto;
-        grid-column-gap: 15px;
-        margin-right:  1rem;
-        margin-left: 1rem;
+        grid-template-rows: auto auto auto;
     }
 
-    #discoverData {
+    .discover2 h2 {
+        grid-column: span 2;
+        grid-row: 1/2;
+    }
+
+    .discover2 p {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .discover2 img {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #holidays {
         display: grid;
-    }
-    
-    table {
-        max-width: 100%;
-    }
-
-    table, tr td {
-        padding: .3rem;
-        margin-bottom: .3rem;
+        grid-template-columns: auto ato;
+        grid-template-rows: auto;
+        column-gap: 1rem;
+        margin-top: 0;
     }
 
-    #ota h2,
-    .discover1 h2,
-    .discover2 h2, 
-    .discover3 h2,
-    .discover4 h2,
-    .discover5 h2 {
-        font-size: 1rem;
-        text-shadow: 0 0 2px rgb(245, 247, 249);
-        padding: .5rem 0 .5rem 0;
+    div#holidays #holidays-title {
+        grid-column: span 2;
+        grid-row: 1/2;
     }
 
-    #ota {
-        display: none;
+    #holiday1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #holiday2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
     .discover6 {
-        grid-column: 2/3;
-        grid-row: 1/-1;
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .gallery {
-        font-size: 1.8rem;
-        padding: 1rem;
+    .favorite {
+        grid-column: 1/-1;
+    }
+
+    .gBox {
+        margin: .5rem;
+    }
+
+    .discover6 .gBox img {
+        padding-top: 0;
     }
 
     .discover6 .gBox img:hover {
         box-shadow: 0 0 50px #333;
     }
 
-    .discover6 .gBox img {
-        padding-top: 0px;
-
+    /*--------------------------------join page--------------------------------------*/
+    div#join-title h2, h2#sml {
+        font-size: 2.5rem;
     }
 
-    .discover6 .gBox {
+    #join-app {
+        padding-top: .5rem;
+    }
+
+    form {
+        max-width: 30rem;
+    }
+
+    form fieldset {
+        padding: 1rem 4%;
+        margin-bottom: 2rem;
+    }
+
+    form legend {
+        margin: 0 2rem;
         font-size: 1rem;
+        padding: 0.7rem 0.7rem;
     }
 
-    .gBox h2{
-        padding-bottom: .5rem;
+    form label.top, form fieldset:nth-child(3) div {
+        font-size: 1.1rem;
+        padding-top: 1.9rem;
     }
 
-    .discover6 .gBox p {
-        margin: 0;
+    form label.top input, form label.top textarea {
+        max-width: none;
+        padding: 0.8rem
     }
 
-    #t-container {
-        display: block;
+    form input.joinbtn {
+        padding: 1rem 1rem;
+        margin: 0 0 2rem 2%;
+        cursor: pointer;
+        font-size: large;
+        width: -webkit-fill-available;
+        max-width: none;
     }
 
+    /*------------------------------thank you page----------------------------------*/
+    main#t-container {
+     display: block;   
+    }
+    
+    div#thanks {
+        max-width:80%;
+    }
+
+    /*-------------------------directory page---------------------------------*/
     main#directory {
         display: block;
     }
@@ -317,65 +407,87 @@
     main#directory article.list {
         display: flex;
         flex-direction: column;
+        letter-spacing: 0;
     }
     
     main#directory article.list section {
-        display: table-row;
+        display: flex;
+	    align-items: center;
+        flex-direction: row;
+	    justify-content: left;
+        margin: 0 0 1rem 0;
+    }
+
+    .list section > * {
+        margin: 0 .6rem;
+        text-align: left;
     }
 
     main#directory article.list section h2 {
-        font-size: .6rem;
-        width: auto;
+        font-size: .8rem;
+        color: var(--primary-color);
+        text-shadow: 0 1px 8px rgb(245 247 249);
+        padding-top: 0;
         line-height: normal;
-        font-weight: bold; 
-        margin-right: .8rem;
-        display: table-cell;
-        width: 13%;
+        font-weight: bold;
+        padding-right: inherit;
+        width: -webkit-fill-available;
     }
     
     main#directory article.list section p.address {
-        display: table-cell;
         font-size: .7rem;
-        width: 22%;
+        line-height: .8rem;
         text-align: left;
-        line-height: normal;
-        padding-left: 10px;
+        padding: 0;
+        width: -webkit-fill-available;
     }
 
     main#directory article.list section a.c-phone {
-        display: table-cell;
         font-size: .7rem;
         text-align: left;
-        padding-left: 7px;
-        width: 20%;
+        width: -webkit-fill-available;
     }
 
     main#directory article.list section a.c-url {
-        display: table-cell;
         font-size: .7rem;
         text-align: left;
-        width: 20%;
-        padding-left: 17px;
-
+        width: -webkit-fill-available;
     }
 
     main#directory article.list section p.c-ml {
-        display: table-cell;
         font-size: .7rem;
         text-align: left;
-        padding-left: 20px;
-        width: 15%;
         line-height: normal;
+        padding: 0;
     }
 
     main#directory article.list section br {
         display: none;
     }
 
+    /*-------------contact us page--------------------*/
+    
+    main#contact-main {
+        display: block;
+    }
 
+    .hero-contact h1 {
+        font-size: 4rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
 
 
 }
+
 
 
 

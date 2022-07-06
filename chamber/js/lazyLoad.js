@@ -1,5 +1,5 @@
 const imagesToLoad = document.querySelectorAll(".pics");
-console.log(imagesToLoad);
+//console.log(imagesToLoad);
 
 const imageOption = {
     threshold : 0,

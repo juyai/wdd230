@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otavalo Valley Chamber | Contact</title>
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="message">
+        <h3 class="hided">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </h3>
+    </div>
+    <header>
+        <div class="logo">
+            <picture class="logo1">
+                <source srcset="images/logo.webp" type="image/webp" >
+                <img src="images/logo.png" alt="Otavalo Valley Chamber of Commerce">
+            </picture>
+            <div id="chamber-name1">
+                <h1>Otavalo <br>Valley</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt=""></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt=""></a>
+        </div>
+        <button id="Btn">
+                <span>&#9776;</span>
+                <span>X</span>
+        </button>
+        <nav>
+            <ul id="Nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p id="currentDate"></p>
+    </header>
+    <main id="contact-main">
+        <div class="hero-contact">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/contact-us-large.jpg">
+                <source media="(min-width: 560px)" srcset="images/contact-us-medium.jpg">
+                <img src="images/contact-us-small.jpg" alt="Contact Us!">        
+            </picture>
+            <h1>CONTACT US!</h1>
+        </div>
+        <div id="contact-us">
+            <h2>Let's stay in touch!</h2>
+            <h3>because we want to hear from you...</h3>
+            <div id="contact-form">
+                <form  id="contact-app" action="thankyou.html" method="get">
+                    <fieldset>
+                        <legend>YOUR INFORMATION</legend>
+                        <label class="top">First Name 
+                            <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                            <input type="text" name="fname" required>
+                        </label>
+                        <label class="top">Last Name 
+                            <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                            <input type="text" name="lname" required>
+                        </label>
+                        <label class="top">Email
+                            <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                            <input type="email" name="email" placeholder="someone@gmail.com" required>
+                        </label>
+                        <label class="top">Cell Phone Number
+                            <input type="tel" name="phone">
+                        </label>
+                        <label class="top">Question/Comment/Concern
+                            <abbr title="This field is mandatory" aria-label="required">*</abbr>
+                            <textarea name="jdescription" required></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="hidden" id="dateTime" name="dateTime">
+                    <input class="joinbtn" type="submit" value="GET IN TOUCH" >
+                </form>
+            </div>
+            <div id="contact">
+                <h2 id="contact-title">"Otavalo Valley Chamber" is there for you with more opportunities. <br>
+                    Get Social <br>
+                    Join the conversation or just daydream about your next project with @otavalovalleychamber
+                </h2>
+                <h2 class="headline">FIND US</h2>
+                <p>
+                    Quiroga & Quito <br>
+                    Otavalo, Imbabura
+                </p>
+                <p>
+                    Monday-Saturday 10am-6pm
+                </p>
+                <h2 class="headline">
+                    FOLLOW US
+                </h2>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><img src="images/facebook.png" alt=""></a>
+                        <a href="https://linkedin.com"><img src="images/linkedin.png" alt=""></a>
+                    </div> 
+                <h2 class="headline">
+                    How can we help?
+                </h2>
+                <a href="mailto:info@otavalovalleycc.org">info@otavalovalleycc.org</a>
+                <br>
+                <a href="tel:+5398187458">+(593) 06-2920626</a>
+
+        </div>  
+    </main>
+    <footer>
+        <div id="info1">
+            <picture id="logo2">
+                <source srcset="images/logo.webp" type="image/webp" >
+            <img  id="resize" src="images/logo.png" alt="Chamber Logo"> 
+            </picture>
+            <div class="info1-text">
+                <h3>Otavalo Valley Chamber of Commerce</h3>
+                <p> 
+                    Quiroga & Quito<br>
+                    Otavalo, Imbabura
+                </p>
+            </div>   
+        </div>        
+        <div class="info2">
+            <a href="mailto:info@otavalovalleycc.org">info@otavalovalleycc.org</a>
+            <br>
+            <a href="tel:+5398187458">+(593) 06-2920626</a> 
+            <br>
+            <a href="#">📍Location Map</a>       
+        </div> 
+        <hr>
+        <div class="info3">
+            <p id="first"><span id="insertion1"></span> Otavalo Valley Chamber &nbsp; &nbsp;</p>
+            <p id="second">&nbsp; Yurinii Fuentes &nbsp; &nbsp;</p>
+            <p id="third">&nbsp; &nbsp;WDD 230 Project &nbsp; &nbsp;</p>   
+            <a id="fourth" href="https://OpenWeatherMap.com">&nbsp; &nbsp; OpenWeatherMap.com &nbsp; &nbsp;</a>
+            <p id="fifth">&nbsp; &nbsp;Last Modification: <span id="insertion2"></span></p>
+        </div>                  
+    </footer>
+</body>
+</html>
