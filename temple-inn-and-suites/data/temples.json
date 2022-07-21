@@ -1,0 +1,100 @@
+{
+    "temples": [
+      {
+        "name": "Mexico City Mexico Temple",
+        "address": "Av. 510 #90, Col. San Juan de Aragon, 07950 México, Distrito Federal, Mexico",
+        "phone": "(52) 55-5003-3700",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "Patron housing available",
+            "Distribution center nearby"
+        ],
+        "image": "assets/images/mexico-city-temple-card.jpg",
+        "closures": [
+            "Saturday, 1 October 2022",
+            "Saturday, 24 December 2022 - Sunday, 25",
+            "December 2022",
+            "Saturday, 31 December 2022"
+        ],
+        "milestones": [
+            "3 April 1976 - Announced",
+            "25 November 1979 - Groundbreaking",
+            "2 December 1983 - Dedicated",
+            "16 November 2008 - Rededicated",
+            "13 September 2015 - Rededicated "
+        ],
+        "url": "https://www.churchofjesuschrist.org/temples/details/mexico-city-mexico-temple?lang=eng"
+      },
+      {
+        "name": "Guayaquil Ecuador Temple",
+        "address": "Calle Rosendo Maridueña 8845, Urdesa Norte — Guayaquil, Ecuador",
+        "phone": "(593) 4-371-8100",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "Patron housing available",
+            "Distribution center nearby"
+        ],
+        "image": "assets/images/guayaquil-ecuador-temple-card.jpg",
+        "closures": [
+            "Friday, 12 August 2022 (Limited Operations)",
+            "Monday, 31 October 2022 - Monday, 21 November 2022"
+        ],
+        "milestones": [
+            "31 March 1982 - Announced",
+            "10 August 1996 - Groundbreaking",
+            "1 August 1999 - Dedicated"
+        ],
+        "url": "https://www.churchofjesuschrist.org/temples/details/guayaquil-ecuador-temple?lang=eng"
+      },
+      {
+        "name": "Lima Peru Temple",
+        "address": "Av. Javier Prado Este 6420, Urb. Santa Patricia, La Molina, Lima 12, Peru",
+        "phone": "(51) 1-612-7200",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "Patron housing available",
+            "Distribution center nearby"
+        ],
+        "image": "assets/images/lima-peru-temple-card.jpg",
+        "closures": [
+            "Thursday, 28 July 2022 - Friday, 29 July 2022",
+            "Saturday, 1 October 2022",
+            "Monday, 3 October 2022 - Monday, 17 October 2022"
+        ],
+        "milestones": [
+            "1 April 1981 - Announced",
+            "11 September 1982 - Groundbreaking",
+            "10 January 1986 - Dedicated"
+        ],
+        "url": "https://www.churchofjesuschrist.org/temples/details/lima-peru-temple?lang=eng"
+      },
+      {
+        "name": "Cochabamba Bolivia Temple",
+        "address": "Av. Melchor Urquidi 1500, Alto Queru Queru, Cochabamba, Bolivia",
+        "phone": "(591) 4-429-3161",
+        "services": [
+            "Clothing rental available",
+            "Cafeteria available",
+            "Patron housing available",
+            "Distribution center nearby"
+        ],
+        "image": "assets/images/cochabamba-bolivia-temple-card.jpg",
+        "closures": [
+            "Saturday, 6 August 2022",
+            "Saturday, 1 October 2022",
+            "Monday, 3 October 2022 - Monday, 17 October 2022",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"
+        ],
+        "milestones": [
+            "13 January 1995 - Announced",
+            "10 November 1996 - Groundbreaking",
+            "30 April 2000 - Dedicated"
+        ],
+        "url": "https://www.churchofjesuschrist.org/temples/details/cochabamba-bolivia-temple?lang=eng"
+      }
+    ]
+  }
