@@ -1,0 +1,466 @@
+/*35rem is also 560px window*/
+@media only screen and (min-width: 35rem) {
+    main {
+        margin-bottom: 6rem;
+    }
+    
+    header {
+    grid-template-columns: 54% 46%;
+    grid-template-rows: auto auto;
+    align-items: center;
+    }
+
+    #logo-header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    
+    #logo-header picture {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #logo-heading {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    } 
+
+    #logo-heading {
+        font-size: .8rem;
+    }
+
+    #logo-heading h1 {
+        font-size: 1.3rem;
+    }
+
+    #social-icons-color {
+        display: block;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-content: end;
+        column-gap: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    #social-icons-color {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+
+    #social-icons {
+        display: none;
+    }
+
+    #nav-bar {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        grid-template-columns: 50% 50%;
+    }
+
+    #btn {
+        justify-self: baseline;
+        margin-left: 1rem;
+    }
+
+    #header-book-btnk {
+        justify-self: end;
+        margin-right: 1rem;
+    }
+
+    #header-book-btn > br {
+        display: none;
+    }
+
+    
+
+    #hpSection1 > h2, #hpSection1 > h3 {
+        text-align: center;
+    } 
+
+    #subsec1 > img:first-of-type {
+        display: block;
+        float: right;
+        width: 50%;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #hpSection1 p:first-of-type {
+        line-height: 1.4rem;
+    }
+
+    #hmSubSec2 {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        column-gap: .5rem;
+        margin-top: 2rem;
+        clear: both;
+    }
+
+    #hmSubSec2 > img {
+        width: 100%;
+    }
+
+    .discover-btn {
+        display: block;
+        width: 20%;
+        margin: auto;
+    }
+
+    #temple-hp {
+        grid-template-columns: 50% 50%;
+    }
+
+    #temple-hp > picture {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #temple-hp > p {
+        margin: 1rem 1.5rem 1rem 1.5rem;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #temple-dropdown {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+        display: block;
+        background-color: var(--accent2);
+    }
+
+    #temple-hp > a {
+        grid-column: 1/-1;
+        grid-row: 6/7;
+        justify-self: center;
+    }
+
+    #temple-dropdown {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
+    }
+
+    #q1 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        border-bottom: 1px solid var(--primary-color);
+        padding: 1rem;
+    }
+
+    #q1 > p:first-of-type {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #q1.temple-btn {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #q1 > p:last-of-type {
+        grid-row: 2/3;
+    }
+
+    #q2 {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        padding: 1rem;
+    }
+
+    #q2 > p:first-of-type {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #q2.temple-btn {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #q1 > p:last-of-type {
+        grid-row: 2/3;
+    }
+
+    .question > p {
+        font-family: var(--paragraph);
+        font-size: .8rem;
+    }
+
+    .question > p:first-child {
+        font-weight: bold;
+    }
+
+    .question .temple-btn  {
+        background-color: var(--primary-color);
+        border-radius: 2rem;
+        width: 25%;
+        justify-self: end;
+    }
+
+    #t-btn1 span:nth-child(2) {
+        display: none;
+    }
+
+    #t-btn1.see span:nth-child(1) { display: none;}
+
+    #t-btn1.see span:nth-child(2) { display: block;}
+
+    #t-info1 { display: none;}
+
+    #t-info1.see { 
+    display: block;
+    }
+
+    #t-btn2 span:nth-child(2) {
+        display: none;
+    }
+
+    #t-btn2.see2 span:nth-child(1) { display: none;}
+
+    #t-btn2.see2 span:nth-child(2) { display: block;}
+
+    #t-info2 { display: none;}
+
+    #t-info2.see2 { 
+    display: block;
+    }
+
+    /*---------------------Temple page-------------------------------*/
+
+    #temple-heading1 {
+        font-size: 1.5rem;
+    }
+
+    #temple-heading2 {
+        font-size: 1.9rem;
+    }
+    
+
+    /*-----------------------------------Reservations page-------------------------------*/
+    #reservation1 > img {
+        display: block;
+        margin-right: .5rem;
+    }
+
+    #reservation1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form {
+        max-width: 30rem;
+    }
+
+    form fieldset {
+        padding: 1rem 4%;
+        margin-bottom: 2rem;
+    }
+
+    form legend {
+        margin: 0 2rem;
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+    }
+
+    form label.top, form fieldset:nth-child(3) div {
+        font-size: 1.1rem;
+        padding-top: 1.9rem;
+    }
+
+    form label.top input, form label.top textarea {
+        max-width: none;
+        padding: 0.8rem
+    }
+
+    form input.bookbtn, form input.contactbtn {
+        padding: 1rem 1rem;
+        margin: 0 0 2rem 2%;
+        cursor: pointer;
+        font-size: large;
+        width: -webkit-fill-available;
+        max-width: none;
+    }
+
+    /*----------------thank you page-----------------------*/
+    div#thanks {
+        max-width: 80%;
+    }
+
+    /*-------------services page-----------------*/
+    #services-top > img:nth-of-type(2) {
+        display: block;
+        max-width: 50%
+    }
+
+    #services-top {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #services-top > img:nth-of-type(1) {
+        max-width: 50%
+    }
+
+    #services {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #free {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0.5rem;
+    }
+
+    #specialized {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+        background-color: var(--accent2);
+        padding: 0 .5rem 0 .5rem;
+    }
+
+    #specialized > h2,
+    #specialized > div#e-services-heading > h2.principle {
+        color: var(--primary-color);
+        text-shadow: 0.01rem 0.1rem 0.01rem var(--primary-color);
+    }
+
+    /*-------------------reception page----------------------------------*/
+    #reception-main-img2 {
+        display: none;
+    }
+    
+    #reception-main-img {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #reception > p:nth-of-type(1) {
+        text-align: center;
+    }
+
+    #food {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #food > h2.secondary {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #food > h3.secondary {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #food > ul#food-options {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #food > img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    #setup {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    #setup > h2.secondary {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #setup > h3.secondary {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    #setup > ul#setup-options {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #setup > img {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    #setup > p {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+    }
+
+    /*----------------missionary page-------------------------*/
+    #missionary1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    #missionary1 > h2.secondary {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    #missionary1 > h3.secondary {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #missionary1 > img {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    #missionary1 > p {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        text-align: center;
+    }
+
+    #missionary2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    #missionary2 > h2.secondary {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #missionary2 > h3.secondary {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #missionary2 > img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    #missionary2 > p {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+    }
+}
